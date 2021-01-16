@@ -174,9 +174,9 @@
 			border: 1px solid #222;
 			position: relative;
 		}
-		.img1{ background-image: url("https://1.bp.blogspot.com/-IQ_mUcFTJ2c/X0JGDEHJBuI/AAAAAAAACLY/Ixz9dt01W-EnSc7cnidvrgQch0b3DEuwgCLcBGAsYHQ/s210/ahDeck.png"); }
-		.img2{ background-image: url("https://1.bp.blogspot.com/-3aoJveLSXb0/X0F4RID7S_I/AAAAAAAACK4/20uxxrrUR3MWKKqYDwRmgEI1h3vCFFPkACLcBGAsYHQ/s1156/IMG-20200806-WA0006.jpg"); }
-		.img3{ background-image: url("https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"); }
+		.img1{ background-image: url("https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png"); }
+		.img2{ background-image: url("https://1.bp.blogspot.com/-f9_3QqpyQvI/YAKlEfHQ45I/AAAAAAAACOY/Lhd-dP_dBGs4VsJdzHjTif0VCzPM1I2ugCLcBGAsYHQ/s1156/IMG-20200806-WA0006%2B%25282%2529.jpg"); }
+		.img3{ background-image: url("https://1.bp.blogspot.com/-c8Xs8TnPb6E/YAKg6A6Pa-I/AAAAAAAACOE/wD5UqGVc-_Q7tfnn6YMzdYI-62JytS_EwCLcBGAsYHQ/s1281/serviceReport.png"); }
 		.img4{ background-image: url("https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"); }
 		.img5{ background-image: url("https://1.bp.blogspot.com/-ytWvxJGSlGs/X0F4SYwUA9I/AAAAAAAACK8/KiQHauvc9mcVgd03tDLDdSGWM1spg--CwCLcBGAsYHQ/s2048/20190114_042702.jpg"); }
 		.img6{ background-image: url("https://2.bp.blogspot.com/-aIpbbnslvAM/W-aRUCcwPpI/AAAAAAAABrM/DB7RSQeYbm43BUrwJi4W56Qy5eHcwip1QCLcBGAs/s1600/project_T-Sock.png"); }
@@ -294,6 +294,10 @@
 			#copyright{
 				width: calc(100% - 75px);
 			}
+			.video{
+				width: 85vw;
+				height: 50vw;
+			}
 		}
 		
 	</style>
@@ -366,8 +370,8 @@
 					<span onclick="document.getElementById('img1').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
 						<div id="img1" class="imgPost img1"></div>
 					</span>
+					<p><text class="subtitle">ahDeck</text> is a desktop interface that can open many applications or files more easily and also makes the desktop look cleaner.</p>
 					<p>Website : <a class="subtitle" href="https://ahdeckstore.com/">ahdeckstore.com</a></p>
-					<p>ahDeck is a desktop interface that can open many applications or files more easily and also makes the desktop look cleaner.</p>
 					<center><div id='videoContent'><iframe class="video" src="https://www.youtube.com/embed/agBUbHLaCSg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></center>
 					<p><text class="subtitle">Super Fast</text> - You can open the application from anywhere at any time<br />
 					<text class="subtitle">Lifetime Support</text> - One-time purchase, so you can keep your app updated<br />
@@ -377,7 +381,13 @@
 					<span onclick="document.getElementById('img2').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
 						<div id="img2" class="imgPost img2"></div>
 					</span>
-					<p>ahDeck is a simple interface that makes opening lots of applications or files more easily and also makes the desktop look cleaner.</p>
+					<p>A device that can count the human faces viewing an ad to provide best position statistics for ad placement without a market density survey.</p>
+					<p>Benefit :<br />
+					- Minimizing errors in ad placement<br />
+					- Advertisers get more viewers so that they are more widely known</p>
+					<p>Web Design Output :<br />
+					<img src="webOutput.png" alt="test" class="video"><br />
+					A Page that contains a graph and a time system capturing human faces.</p>
 				</div>
 				<div id="post3" style="display: none;">
 					<span onclick="document.getElementById('img3').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
@@ -389,19 +399,30 @@
 					<span onclick="document.getElementById('img4').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
 						<div id="img4" class="imgPost img4"></div>
 					</span>
-					<p>ahDeck is a simple interface that makes opening lots of applications or files more easily and also makes the desktop look cleaner.</p>
+					<p><text class="subtitle">SMS Storage</text> is a desktop application for managing office inventory to control so that the first item entered comes out first, thereby minimizing expired items. The application is connected to the office database used for invoice creation, so that the application can read invoice items which make warehouse employees prepare items faster than waiting for the admin to give several invoices to warehouse employees and prepare them at once. This application is also able to print invoice items with the serial number selected by the system which will be used by warehouse employees to prepare items.</p>
+					<p>Feature :<br />
+					- Login system<br />
+					- Manage office inventory ( date of entry, item type, item name, serial number, quantity, expired date, status )<br />
+					- Read invoices created by admin from the accounting app<br />
+					- Able to print invoices items</p>
 				</div>
 				<div id="post5" style="display: none;">
 					<span onclick="document.getElementById('img5').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
 						<div id="img5" class="imgPost img5"></div>
 					</span>
-					<p>ahDeck is a simple interface that makes opening lots of applications or files more easily and also makes the desktop look cleaner.</p>
+					<p><text class="subtitle">Fogponic Plant Grower Box</text> is a plant growing tool that uses the fogponic growing method, where the fogger will convert the nutrient and water solutions into particles measuring 5 - 30 µm to be sprayed on plants, and can work automatically by relying on the Arduino nano microcontroller. This tool has a 10W LED light that can be adjusted to the brightness of the red and blue colors to resemble the sun so that the tool is suitable when used indoors. Another capability of this tool is that it can monitor the humidity of the tool, the water temperature, and the water level limit for the fogger. The data will be displayed on an LCD and the tool will automatically adjust the situation to match the ideal conditions needed by the plant, for example the tool will turn on the fogger when the humidity of the tool is below the specified limit and turn off the fogger when the humidity of the tool is above the specified limit.</p>
+					<p>Benefit :<br />
+					- Solve the problem of shrinking agricultural land in Indonesia<br />
+					- Reduce cases of chemical poisoning in food, so that it is useful to help people maintain health quality</p>
 				</div>
 				<div id="post6" style="display: none;">
 					<span onclick="document.getElementById('img6').classList.add('imgClick'); document.getElementById('coverImg').style.display='block';document.getElementById('closeImg').style.display='block';">
 						<div id="img6" class="imgPost img6"></div>
 					</span>
-					<p>ahDeck is a simple interface that makes opening lots of applications or files more easily and also makes the desktop look cleaner.</p>
+					<p><text class="subtitle">Timer Socket (T-SOCK)</text> is a device with a timer function built in to a socket where the socket itself will turns on and off continuously according to the user-defined length of ON and OFF time. T-SOCK is an arrangement of several components that make up the T-SOCK working system itself. The work system is divided into 3 parts, namely relays, menu buttons, and Arduino nano.</p>
+					<p>Benefit :<br />
+					- Become a device that can solve problems faced when forgetting to unplug an electronic device connected to electricity<br />
+					- Become a device that can help save daily electricity usage</p>
 				</div>
 			</div>
 		</div>
