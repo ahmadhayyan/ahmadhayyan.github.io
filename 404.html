@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="character_set"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="title" content="Ahmad Hayyan Personal Website"/>
+		<meta name="description" content="Hello, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css"/>
+		<meta name="author" content="Ahmad Hayyan"/>
+		<title>404 Page Not Found - Ahmad Hayyan</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style>
+			body{
+				font: bold 35px monospace;
+				background-color: #282a36;
+				color: white;
+				margin: 0;
+			}
+			a{
+				color: #f09502;
+				transition: all 0.5s ease-in-out;
+				text-decoration: none;
+			}
+			a:hover{
+				color: #985f03;
+			}
+			#error{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 400px;
+			}
+			#error::before{
+				content: 'Error';
+				display: block;
+				margin: 100px auto -100px auto;
+				font-size: 50px;
+			}
+			#back{
+				position: fixed;
+				bottom: 20px;
+				left: 20px;
+				background-color: rgba(56, 58, 89, 0.5);
+				padding: 10 30px;
+				border: 0 solid transparent;
+				border-radius: 40px;
+				word-spacing: -10px;
+			}
+			@media screen and (max-width: 499px){
+				body{
+					font-size: 20px;
+				}
+				#error{
+					font-size: 150px;
+				}
+				#error::before{
+					margin: 25px auto -25px auto;
+					font-size: 25px;
+				}
+				#back{
+					padding: 10px 25px 10px 20px;
+					word-spacing: 0;
+				}
+			}
+		</style>
+	<head>
+	<body>
+		<div id="error">404</div>
+		<a href="/" id="back"><i class="fa fa-home"></i> Home</a>
+	</body>
+</html>

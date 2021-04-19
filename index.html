@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="title" content="Ahmad Hayyan Personal Website"/>
+		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js"/>
+		<meta name="author" content="Ahmad Hayyan"/>
+		
+		<meta property="og:title" content="Ahmad Hayyan Personal Website"/>
+		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js"/>
+		<meta property="og:url" content="https://ahmadhayyan.github.io"/>
+		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="Ahmad Hayyan Personal Website"/>
+		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="twitter:url" content="https://ahmadhayyan.github.io"/>
+		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		
+		<title>Ahmad Hayyan</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="res/mainStyle.css">
+	</head>
+	<body>
+		<div id="top"></div>
+		<div id="title">
+			<a href="/" id="ahskript_title">ahmadhayyan</a>
+			<a id="projectBtn" href="project" class="menuBtn">projects</a>
+			<a id="aboutBtn" href="#" class="menuBtn">home</a>
+			<span id="mobileMenu" class="menuBtn menuMobile" onclick="openMenu();"><i class="fa fa-bars icon"></i></span>
+		</div>
+		<div id="mobileMenuFull" style="display: none;">
+			<div id="mobileMenuWrapper">
+				<center><a class="menuMobileList" href="/">home</a></center><br />
+				<center><a class="menuMobileList" href="project">projects</a></center><br />
+			</div>
+		</div>
+		<div id="Home">
+			<div id="ah_image" class="desktopOnly"><iframe align="center" frameborder="yes" height="99%" name="frame1" scrolling="no" src="https://koalastothemax.com/?aHR0cHM6Ly8xLmJwLmJsb2dzcG90LmNvbS8tMndHaFZxd2EtMmMvWDBFLVZ2V0gyeEkvQUFBQUFBQUFDS3MvVDJjdDZzclJlcmtVZDExdnRjamlTMjRMWEUtWTE0NXJnQ0xjQkdBc1lIUS9zMjA0OC8yMDE4MDIxMV8wOTIzMTklMkItJTJCQ29weSUyQiUyNTI4MiUyNTI5LmpwZw==" style="border: 0px solid;" width="99%"></iframe></div>
+			<div id="whiteblock" class="desktopOnly"></div>
+			
+			<div class="content">
+				<img src="res/img/ah_image.jpg" class="mobileOnly" style="width: 100%; margin-bottom: 10px;"/>
+				<div id="about">
+					<text>Hi, My name is Ahmad Hayyan, located in Karawang, Indonesia. I am a fresh graduate from Bina Nusantara University majoring in Computer Engineering who will try hard to develop skills professionally.</text>
+					<br /><br /><br />
+					<text id="skill_fulltext"><text id="skill_iam">I AM A</text>
+						<div id="skill">
+							<span id="skill_span">
+								SOFTWARE ENGINEER<br />
+								FULL-STACK DEVELOPER<br />
+								EMBEDDED SYSTEMS ENGINEER<br />
+							</span>
+						</div>
+					</text>
+				</div>
+				
+				<div id="extrasWrapper">
+					<div class="extras">
+						<center><b>Software<br/>Engineer<br class="mobileOnly"/></b>
+						<br /><br />
+						<i class="fa fa-desktop icon" style="color:#383a59;"></i>
+						<br /><br />
+						<text class="extras_subtitle"><b>Languages I speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>QtCreator, Visual Studio, MySQL, PostgreSQL</text></center>
+					</div>
+					<div class="extras">
+						<center><b>Full-Stack<br/>Developer<br class="mobileOnly"/></b>
+						<br /><br />
+						<i class="fa fa-globe icon" style="color:#383a59;"></i>
+						<br /><br />
+						<text class="extras_subtitle"><b>Languages I speak:</b><br/>PHP, HTML, CSS, JS, SQL<br/><br/><b>Dev Tools:</b><br/>GitHub, Apache, Heroku, PHP Mailer, MySQL, PostgreSQL</text></center>
+					</div>
+					<div class="extras">
+						<center><b>Embedded<text class="desktopOnly"> </text><br class="mobileOnly"/>Systems<br/>Engineer</b>
+						<br /><br />
+						<i class="fa fa-building-o icon" style="color:#383a59;"></i>
+						<br /><br />
+						<text class="extras_subtitle"><b>Languages I speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>Arduino, Raspberry Pi, ESP, MySQL, PostgreSQL</text></center>
+					</div>
+				</div>
+				<br/>
+				
+				<text class="content_title">Featured Projects.</text>
+				<div id="projectWrapper" style="display: flex; flex-flow: row wrap; justify-content: center;">
+					<a href="project/Web%20Store%20and%20Admin%20Panel.html">
+						<div class="img__wrap">
+							<img class="imgMoreProject img__img img7" />
+							<div class="img__description_layer">
+								<p class="img__description">WEB STORE AND ADMIN PANEL</p>
+							</div>
+						</div>
+					</a>
+					<a href="project/ahDeck.html">
+						<div class="img__wrap">
+							<img class="imgMoreProject img__img img1" />
+							<div class="img__description_layer">
+								<p class="img__description">AHDECK</p>
+							</div>
+						</div>
+					</a>
+					<a href="project/Face%20Detection%20System%20For%20Advertising%20Placement.html">
+						<div class="img__wrap">
+							<img class="imgMoreProject img__img img2" />
+							<div class="img__description_layer">
+								<p class="img__description">FACE DETECTION SYSTEM FOR ADVERTISING PLACEMENT</p>
+							</div>
+						</div>
+					</a>
+					<a href="project/SMS%20Storage.html">
+						<div class="img__wrap">
+							<img class="imgMoreProject img__img img4" />
+							<div class="img__description_layer">
+								<p class="img__description">SMS STORAGE</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<a id="moreProject" href="project">More Project..</a>
+				
+				<br /><br />
+				<div class="contact-wrapper">
+					Contact Me :
+					<div class="contact">
+						<i class="fa fa-envelope icon" style="vertical-align: middle;"></i>
+						<a href="mailto:ahmadhayyan9@gmail.com" target="_blank" class="contactlink">ahmadhayyan9@gmail.com</a><br />
+					</div>
+					<div class="contact">
+						<i class="fa fa-github icon" style="vertical-align: middle;"></i>
+						<a href="https://github.com/ahmadhayyan" target="_blank" class="contactlink">ahmadhayyan</a>
+					</div>
+					<div class="contact">
+						<i class="fa fa-instagram icon" style="vertical-align: middle;"></i>
+						<a href="https://www.instagram.com/ahmadhayyan_/" target="_blank" class="contactlink">@ahmadhayyan_</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="copyright">Copyright © ahmadhayyan</footer>
+	</body>
+</html>
+
+<script type="text/javascript" src="res/mainJS.js"></script>
