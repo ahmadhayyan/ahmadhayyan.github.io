@@ -28,14 +28,16 @@ function closeMenu(){
 	document.body.style.overflowY='auto';
 }
 
+var image;
 function openImage(id){
+	image = id;
 	document.getElementById(id).classList.add('imgClick');
 	document.getElementById('coverImg').style.display = 'block';
 	document.getElementById('closeImg').style.display = 'block';
 	document.body.style.overflow = 'hidden';
 }
-function closeImage(id){
-	document.getElementById(id).classList.remove('imgClick');
+function closeImage(){
+	document.getElementById(image).classList.remove('imgClick');
 	document.getElementById('closeImg').style.display='none';
 	document.getElementById('coverImg').style.display='none';
 	document.body.style.overflow = 'auto';
