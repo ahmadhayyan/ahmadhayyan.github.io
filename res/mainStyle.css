@@ -189,6 +189,9 @@ a:hover{
 	margin: 80px auto 0 auto;
 	padding-bottom: 10px;
 }
+img{
+	cursor: zoom-in;
+}
 .img{
 	flex: 1;
 	height: 100%;
