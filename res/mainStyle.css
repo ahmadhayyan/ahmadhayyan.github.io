@@ -20,18 +20,18 @@ body{
 }
 a{
 	text-decoration: none;
-	color: #000;
+	color: #d59dff;
 	transition:all 0.3s ease-in-out;
 }
 a:hover{
-	color: var(--bgr-color);
+	color: #e1bdfc;
 }
 .mobileOnly{
 	display: none;
 }
 /* ------------------------------------------------- scrollbar ------------------------------------------------- */
 ::-webkit-scrollbar {
-	width: 15px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
 	background: var(--bgr-color);
@@ -51,6 +51,12 @@ a:hover{
 	background-color: var(--primary-color);
 	margin: 0 auto;
 	border-radius: 0 0 40px 40px;
+}
+#title a{
+	color: #000;
+}
+#title a:hover{
+	color: var(--bgr-color);
 }
 #ahskript_title{
 	font-family: erasITC;
@@ -212,6 +218,8 @@ img{
 .img5{ background-image: url("https://1.bp.blogspot.com/-ytWvxJGSlGs/X0F4SYwUA9I/AAAAAAAACK8/KiQHauvc9mcVgd03tDLDdSGWM1spg--CwCLcBGAsYHQ/s2048/20190114_042702.jpg"); }
 .img6{ background-image: url("https://2.bp.blogspot.com/-aIpbbnslvAM/W-aRUCcwPpI/AAAAAAAABrM/DB7RSQeYbm43BUrwJi4W56Qy5eHcwip1QCLcBGAs/s1600/project_T-Sock.png"); }
 .img7{ background-image: url("img/ecommerce_admin_panel.png"); }
+.img8{ background-image: url("img/ahNotification.png"); }
+.img9{ background-image: url("img/ahUpdater.png"); }
 
 .img p{
 	position: absolute;
@@ -372,6 +380,8 @@ img{
 .video{
 	width: 850px;
 	height: 500px;
+	width: 100%;
+	height: 550px;
 }
 .tags{
 	color: var(--comment-color);
@@ -386,8 +396,12 @@ img{
 	padding: 10px 40px;
 	margin: 0 auto;
 }
-.footer_link{
+footer a{
 	color: rgba(0,0,0,0.6);
+}
+footer a:hover{
+	color: var(--bgr-color);
+	text-decoration: underline;
 }
 /* ------------------------------------------------- responsive ------------------------------------------------- */
 /* ------------------------------------------------- tablet ------------------------------------------------- */
@@ -471,87 +485,7 @@ img{
 	}
 }
 /* ------------------------------------------------- mobile ------------------------------------------------- */
-@media screen and (max-width: 900px) and (max-height: 499px){
-	.desktopOnly{
-		display: none;
-	}
-	.mobileOnly{
-		display: block;
-	}
-	body{
-		font-size: 0.75em;
-	}
-	/* ------------------------------------------------- mobile title ------------------------------------------------- */
-	#title {
-		padding: 10px;
-		width: calc( 100% - 20px );
-	}
-	#ahskript_title{
-		font-size: 1.5em;
-	}
-	.menuBtn .icon, #closeImg .icon{
-		font-size: 1.8em;
-	}
-	/* ------------------------------------------------- mobile content ------------------------------------------------- */
-	.content {
-		padding: 20px 10px;
-		width: calc(100% - 20px);
-	}
-	#Home .content{
-		padding-top: 20px;
-	}
-	.content-project{
-		padding-top: 0;
-	}
-	/* ------------------------------------------------- mobile home ------------------------------------------------- */
-	#about{
-		padding-bottom: 20px;
-	}
-	#skill_iam{
-		padding: 1px 5px;
-		background-color: #797db7;
-	}
-	#extrasWrapper{
-		margin: 0;
-	}
-	.extras{
-		padding: 10px 3px;
-		margin: 3px;
-		width: calc( ( 100% / 3 ) - ( 3px * 4 ) );
-	}
-	.img__wrap{
-		height: 58px;
-		margin: 5px;
-	}
-	.imgMoreProject {
-		width: calc( 100vw - 28px ) !important;
-		height: 50px !important;
-	}
-	/* ------------------------------------------------- mobile project content ------------------------------------------------- */
-	.imgPost{
-		height: 30em;
-		width: calc( 100% + 20px );
-		margin-left: -10px;
-	}
-	.imgClick{
-		height: 100%;
-		margin-left: 0;
-	}
-	#closeImg{
-	    top: 20px;
-		right: 20px;
-		padding: 8px 10px;
-	}
-	.picts{
-		height: 50vw;
-	}
-	/* ------------------------------------------------- mobile footer ------------------------------------------------- */
-	#copyright{
-		padding: 7px 10px;
-		width: calc(100% - 20px);
-	}
-}
-@media screen and (max-width: 499px){
+@media screen and (max-width: 499px), screen and (max-width: 900px) and (max-height: 499px){
 	.desktopOnly{
 		display: none;
 	}

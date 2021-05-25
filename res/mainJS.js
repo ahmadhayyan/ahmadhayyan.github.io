@@ -1,5 +1,5 @@
 var year = new Date().getFullYear();
-document.getElementById('copyright').innerHTML = "&copy; "+ year + " <a class='footer_link' href='https://ahmadhayyan.github.io'>ahmadhayyan</a>" + ". All Rights Reserved.";
+document.getElementById('copyright').innerHTML = "&copy; "+ year + " <a href='https://ahmadhayyan.github.io'>ahmadhayyan</a>" + ". All Rights Reserved.";
 
 function openMenu(){
 	document.getElementById('title').style.display='none';
@@ -27,6 +27,13 @@ function closeMenu(){
 	
 	document.body.style.overflowY='auto';
 }
+
+window.addEventListener("resize", function(event) {
+	var home = document.getElementById("Home");
+	if (home && window.innerWidth > 1229){
+		closeMenu();
+	}
+});
 
 var image;
 function openImage(id, imageURL){
@@ -59,9 +66,3 @@ function closeImage(){
 		html.parentNode.removeChild(html);
 	}
 }
-
-window.addEventListener("resize", function(event) {
-	if (window.innerWidth < 1229){
-		closeMenu();
-	}
-});
