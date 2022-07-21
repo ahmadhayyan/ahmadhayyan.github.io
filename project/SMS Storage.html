@@ -8,19 +8,19 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#f09502"/>
 		
 		<meta name="title" content="SMS Storage - Ahmad Hayyan"/>
-		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
 		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,software,desktop,windows"/>
 		<meta name="author" content="Ahmad Hayyan"/>
 		
 		<meta property="og:title" content="SMS Storage - Ahmad Hayyan"/>
-		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta property="og:description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
 		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,software,desktop,windows"/>
 		<meta property="og:url" content="https://ahmadhayyan.github.io/project/SMS%20Storage.html"/>
 		<meta property="og:image" content="https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="SMS Storage - Ahmad Hayyan"/>
-		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="twitter:description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
 		<meta name="twitter:url" content="https://ahmadhayyan.github.io/project/SMS%20Storage.html"/>
 		<meta name="twitter:image" content="https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"/>
 		
@@ -29,12 +29,14 @@
 		<link rel="stylesheet" href="../res/mainStyle.css">
 	</head>
 	<body>
-		<div id="title">
-			<a href="../" id="ahskript_title">ahmadhayyan</a>
-			<a id="projectBtn" href="../project" class="menuBtn">projects</a>
-			<a id="aboutBtn" href="../" class="menuBtn">home</a>
-			<span id="mobileBack" class="menuBtn menuMobile"><a href="../project"><i class="fa fa-chevron-left icon"></i></a></span>
-		</div>
+		<header id="title_wrapper">
+			<a href="../" id="title">ahmadhayyan</a>
+			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
+			<span class="menuBtnWrapper">
+				<a id="aboutBtn" href="../" class="menuBtn">Home</a>
+				<a id="highlightedBtn" href="./" class="menuBtn">Projects</a>
+			</span>
+		</header>
 		
 		<div class="content content-project">
 			<span id="closeImg" style="display: none;" onclick="closeImage();">
@@ -57,10 +59,12 @@
 			- Minimizing expired items<br />
 			- Organized the placement of items<br />
 			- Warehouse Employees able to prepare items faster</p>
-			<br /><text class="tags">Tags: 2019, C++, Qt, PostgreSQL</text>
+			<br />
+			<div id="share-wrapper"></div>
+			<text class="tags">Tags: 2019, C++, Qt, PostgreSQL</text>
 		</div>
 		<footer id="copyright">Copyright © ahmadhayyan</footer>
 	</body>
 </html>
 
-<script type="text/javascript" src="../res/mainJS.js"></script>
+<script type="text/javascript" src="../res/mainJS.js?n=1"></script>

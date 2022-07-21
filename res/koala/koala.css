@@ -1,0 +1,54 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Helvetica Neue",Helvetica,Arial,Sans-serif;
+  font-weight: 300;
+  text-align: center;
+  cursor: default;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  -ms-touch-action: none;
+}
+
+div {
+  cursor: inherit;
+}
+
+#center {
+  position: relative;
+  height: 100%;
+  width: 512px;
+  margin: 0 auto;
+}
+
+#cont {
+  position: absolute;
+  top: 50%;
+  margin-top: -270px;
+  width:  512px;
+  height: 570px;
+}
+
+#dot {
+  width:  512px;
+  height: 512px;
+}
+
+svg,
+circle {
+  pointer-events: none;
+}
+
+div.not-found {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 32px;
+}

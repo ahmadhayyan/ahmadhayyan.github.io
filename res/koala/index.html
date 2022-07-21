@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=IE8">
+    <meta name="viewport" content="width=540, user-scalable=0">
+
+    <script type="text/javascript">var version = '1.9.4';</script>
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript" src="d3.min.js?1.9.4"></script>
+    <script type="text/javascript" src="koala.js?1.9.4"></script>
+    <!--<![endif]-->
+    <link rel="stylesheet" type="text/css" href="koala.css?1.9.4"/>
+  </head>
+
+  <body>
+    <div id="center">
+      <div id="cont">
+        <noscript>
+          Your browser does not support JavaScript or it is disabled.<br>
+          JavaScript is needed to view this site.
+        </noscript>
+        <div id="dots"></div>
+      </div>
+    </div>
+
+    <!--[if gte IE 9]><!-->
+    <script type="text/javascript">
+      (function() {
+        window.shownFile = 'none';
+
+        // Check if it is possible to load
+        if (!koala.supportsCanvas() && !koala.supportsSVG() && !window.d3) {
+          return;
+        }
+
+        function basicLoad(location) {
+          var file = '../img/ah_image.jpg'
+          return {
+            file: file,
+            shownFile: location.protocol + '//' + location.host + location.pathname + file
+          };
+        }
+
+        var parse = basicLoad(location);
+        var file = parse.file;
+        window.shownFile = parse.shownFile;
+
+        var img = new Image();
+        img.onload = function() {
+          var colorData = null;
+          colorData = koala.loadImage(this);
+          if (colorData){
+            koala.makeCircles("#dots", colorData);
+          }
+        };
+        img.src = file;
+
+      })();
+    </script>
+    <!--<![endif]-->
+
+  </body>
+</html>

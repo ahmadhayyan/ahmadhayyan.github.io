@@ -8,19 +8,19 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#f09502"/>
 		
 		<meta name="title" content="Web Store and Admin Panel - Ahmad Hayyan"/>
-		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="description" content="Web Store is a website application for buying and selling items and Admin Panel is a website application for managing order payments and serial numbers."/>
 		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,ecommerce,web store,admin panel"/>
 		<meta name="author" content="Ahmad Hayyan"/>
 		
 		<meta property="og:title" content="Web Store and Admin Panel - Ahmad Hayyan"/>
-		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta property="og:description" content="Web Store is a website application for buying and selling items and Admin Panel is a website application for managing order payments and serial numbers."/>
 		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,ecommerce,web store,admin panel"/>
 		<meta property="og:url" content="https://ahmadhayyan.github.io/project/Web%20Store%20and%20Admin%20Panel.html"/>
 		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ecommerce_admin_panel.png"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="Web Store and Admin Panel - Ahmad Hayyan"/>
-		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="twitter:description" content="Web Store is a website application for buying and selling items and Admin Panel is a website application for managing order payments and serial numbers."/>
 		<meta name="twitter:url" content="https://ahmadhayyan.github.io/project/Web%20Store%20and%20Admin%20Panel.html"/>
 		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ecommerce_admin_panel.png"/>
 		
@@ -29,12 +29,14 @@
 		<link rel="stylesheet" href="../res/mainStyle.css">
 	</head>
 	<body>
-		<div id="title">
-			<a href="../" id="ahskript_title">ahmadhayyan</a>
-			<a id="projectBtn" href="../project" class="menuBtn">projects</a>
-			<a id="aboutBtn" href="../" class="menuBtn">home</a>
-			<span id="mobileBack" class="menuBtn menuMobile"><a href="../project"><i class="fa fa-chevron-left icon"></i></a></span>
-		</div>
+		<header id="title_wrapper">
+			<a href="../" id="title">ahmadhayyan</a>
+			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
+			<span class="menuBtnWrapper">
+				<a id="aboutBtn" href="../" class="menuBtn">Home</a>
+				<a id="highlightedBtn" href="./" class="menuBtn">Projects</a>
+			</span>
+		</header>
 		
 		<div class="content content-project">
 			<span id="closeImg" style="display: none;" onclick="closeImage();">
@@ -70,16 +72,18 @@
 				<img src="../res/img/ecommerce1.png" id="pict1" class="picts" onclick="openImage('', this.src);"><br />
 				<img src="../res/img/ecommerce2.png" id="pict2" class="picts" onclick="openImage('', this.src);"><br />
 				<img src="../res/img/ecommerce3.png" id="pict3" class="picts" onclick="openImage('', this.src);"><br />
-				<img src="../res/img/ecommerce_mobile.png" id="pict4" class="picts" onclick="openImage('', this.src);"><br />
+				<img src="../res/img/ecommerce4.png" id="pict4" class="picts" onclick="openImage('', this.src);"><br />
 				<img src="../res/img/admin_panel1.png" id="pict5" class="picts" onclick="openImage('', this.src);"><br />
 				<img src="../res/img/admin_panel2.png" id="pict6" class="picts" onclick="openImage('', this.src);"><br />
 				<img src="../res/img/admin_panel3.png" id="pict7" class="picts" onclick="openImage('', this.src);"><br />
-				<img src="../res/img/admin_panel_mobile.png" id="pict8" class="picts" onclick="openImage('', this.src);"><br />
+				<img src="../res/img/admin_panel4.png" id="pict8" class="picts" onclick="openImage('', this.src);"><br />
 			</div>
-			<br /><text class="tags">Tags: 2021, PHP, HTML, CSS, JS, GitHub, Heroku, Database, PHPMailer</text>
+			<br /><br />
+			<div id="share-wrapper"></div>
+			<text class="tags">Tags: 2021, PHP, HTML, CSS, JS, GitHub, Heroku, Database, PHPMailer</text>
 		</div>
 		<footer id="copyright">Copyright © ahmadhayyan</footer>
 	</body>
 </html>
 
-<script type="text/javascript" src="../res/mainJS.js"></script>
+<script type="text/javascript" src="../res/mainJS.js?n=1"></script>

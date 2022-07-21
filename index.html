@@ -5,19 +5,19 @@
 		<meta name="robots" content="index, follow" />
 		
 		<meta name="title" content="Ahmad Hayyan Personal Website"/>
-		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
 		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js"/>
 		<meta name="author" content="Ahmad Hayyan"/>
 		
 		<meta property="og:title" content="Ahmad Hayyan Personal Website"/>
-		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
 		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js"/>
 		<meta property="og:url" content="https://ahmadhayyan.github.io"/>
 		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="Ahmad Hayyan Personal Website"/>
-		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering degree. Here you can see the projects I have worked on."/>
+		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
 		<meta name="twitter:url" content="https://ahmadhayyan.github.io"/>
 		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
 		
@@ -31,29 +31,23 @@
 		<link rel="stylesheet" href="res/mainStyle.css">
 	</head>
 	<body>
-		<div id="top"></div>
-		<div id="title">
-			<a href="/" id="ahskript_title">ahmadhayyan</a>
-			<a id="projectBtn" href="project" class="menuBtn">projects</a>
-			<a id="aboutBtn" href="#" class="menuBtn">home</a>
-			<span id="mobileMenu" class="menuBtn menuMobile" onclick="openMenu();"><i class="fa fa-bars icon"></i></span>
-		</div>
-		<div id="mobileMenuFull" style="display: none;">
-			<div id="mobileMenuWrapper">
-				<center><a class="menuMobileList" href="/">home</a></center><br />
-				<center><a class="menuMobileList" href="project">projects</a></center><br />
-			</div>
-		</div>
-		<div id="Home">
-			<div id="ah_image" class="desktopOnly"><iframe align="center" frameborder="yes" height="99%" name="frame1" scrolling="no" src="https://koalastothemax.com/?aHR0cHM6Ly8xLmJwLmJsb2dzcG90LmNvbS8tMndHaFZxd2EtMmMvWDBFLVZ2V0gyeEkvQUFBQUFBQUFDS3MvVDJjdDZzclJlcmtVZDExdnRjamlTMjRMWEUtWTE0NXJnQ0xjQkdBc1lIUS9zMjA0OC8yMDE4MDIxMV8wOTIzMTklMkItJTJCQ29weSUyQiUyNTI4MiUyNTI5LmpwZw==" style="border: 0px solid;" width="99%"></iframe></div>
-			<div id="whiteblock" class="desktopOnly"></div>
-			
+		<header id="title_wrapper">
+			<a href="./" id="title">ahmadhayyan</a>
+			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
+			<span class="menuBtnWrapper">
+				<a id="aboutBtn" href="./" class="menuBtn">Home</a>
+				<a id="highlightedBtn" href="./project" class="menuBtn">Projects</a>
+			</span>
+		</header>
+		<div id="Home">			
 			<div class="content">
-				<img src="res/img/ah_image.jpg" class="mobileOnly" style="width: 100%; margin-bottom: 10px;"/>
+				<div id="ah_image" class="desktopOnly"><iframe align="center" frameborder="yes" height="99%" name="frame1" scrolling="no" src="./res/koala/index.html" style="border: 0px solid;" width="99%"></iframe></div>
+				<img src="res/img/ah_image_mobile.jpg" class="mobileOnly" style="width: 100%; margin-bottom: 10px; cursor: default;"/>
 				<div id="about">
-					<text>Hi, My name is Ahmad Hayyan, located in Karawang, Indonesia. I am a fresh graduate from Bina Nusantara University majoring in Computer Engineering who will try hard to develop skills professionally.</text>
-					<br /><br /><br />
-					<text id="skill_fulltext"><text id="skill_iam">I AM A</text>
+					<p class="reveal fade"><b>Hi, I'm Ahmad Hayyan</b>, located in Indonesia. I am an engineering graduate in computer engineering and I am interested in software and web development. Here on this website, you can see the projects I have worked on.</p>
+					<br />
+					<div id="skill_fulltext" class="reveal fade-left">
+						<text id="skill_iam">I AM A</text>
 						<div id="skill">
 							<span id="skill_span">
 								SOFTWARE ENGINEER<br />
@@ -61,25 +55,25 @@
 								EMBEDDED SYSTEMS ENGINEER<br />
 							</span>
 						</div>
-					</text>
+					</div>
 				</div>
 				
 				<div id="extrasWrapper">
-					<div class="extras">
+					<div class="extras reveal fade-bottom">
 						<center><b>Software<br/>Engineer<br class="mobileOnly"/></b>
 						<br /><br />
 						<i class="fa fa-desktop icon" style="color:#383a59;"></i>
 						<br /><br />
 						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>QtCreator, Visual Studio, MySQL, PostgreSQL</text></center>
 					</div>
-					<div class="extras">
+					<div class="extras reveal fade-bottom">
 						<center><b>Full-Stack<br/>Developer<br class="mobileOnly"/></b>
 						<br /><br />
 						<i class="fa fa-globe icon" style="color:#383a59;"></i>
 						<br /><br />
 						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>PHP, HTML, CSS, JS, SQL<br/><br/><b>Dev Tools:</b><br/>GitHub, Apache, Heroku, PHP Mailer, MySQL, PostgreSQL</text></center>
 					</div>
-					<div class="extras">
+					<div class="extras reveal fade-bottom">
 						<center><b>Embedded<text class="desktopOnly"> </text><br class="mobileOnly"/>Systems<br/>Engineer</b>
 						<br /><br />
 						<i class="fa fa-building-o icon" style="color:#383a59;"></i>
@@ -87,11 +81,11 @@
 						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>Arduino, Raspberry Pi, ESP, MySQL, PostgreSQL</text></center>
 					</div>
 				</div>
-				<br/>
+				<br/><br/>
 				
 				<text class="content_title">Featured Projects.</text>
-				<div id="projectWrapper" style="display: flex; flex-flow: row wrap; justify-content: center;">
-					<a href="project/Web%20Store%20and%20Admin%20Panel.html">
+				<div id="projectWrapper" style="display: grid; justify-content: center;">
+					<a href="project/Web%20Store%20and%20Admin%20Panel.html" class="reveal fade-left">
 						<div class="img__wrap">
 							<img class="imgMoreProject img__img img7" />
 							<div class="img__description_layer">
@@ -99,7 +93,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="project/ahDeck.html">
+					<a href="project/ahDeck.html" class="reveal fade-right">
 						<div class="img__wrap">
 							<img class="imgMoreProject img__img img1" />
 							<div class="img__description_layer">
@@ -107,7 +101,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="project/Face%20Detection.html">
+					<a href="project/Face%20Detection.html" class="reveal fade-left">
 						<div class="img__wrap">
 							<img class="imgMoreProject img__img img2" />
 							<div class="img__description_layer">
@@ -115,7 +109,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="project/SMS%20Storage.html">
+					<a href="project/SMS%20Storage.html" class="reveal fade-right">
 						<div class="img__wrap">
 							<img class="imgMoreProject img__img img4" />
 							<div class="img__description_layer">
@@ -124,23 +118,21 @@
 						</div>
 					</a>
 				</div>
-				<a id="moreProject" href="project">More Project..</a>
-				
-				<br /><br />
-				<div class="contact-wrapper">
-					Contact Me :
-					<div class="contact">
-						<i class="fa fa-envelope icon" style="vertical-align: middle;"></i>
-						<a href="mailto:ahmadhayyan9@gmail.com" class="contactlink">ahmadhayyan9@gmail.com</a><br />
-					</div>
-					<div class="contact">
-						<i class="fa fa-github icon" style="vertical-align: middle;"></i>
-						<a href="https://github.com/ahmadhayyan" rel="noopener noreferrer" target="_blank" class="contactlink">ahmadhayyan</a>
-					</div>
-					<div class="contact">
-						<i class="fa fa-instagram icon" style="vertical-align: middle;"></i>
-						<a href="https://www.instagram.com/ahmadhayyan_/" rel="noopener noreferrer" target="_blank" class="contactlink">@ahmadhayyan_</a>
-					</div>
+				<a id="moreProject" href="project">More Projects &#x2192;</a>
+				<br /><br /><br/><br/>
+
+				<div id="contact" class="contact-wrapper">
+					Contact Me:
+					<i id="contact-email" class="fa fa-envelope-square icon home-contact-icon" onclick="setContactDetail('ahmadhayyan9@gmail.com', 'mailto:ahmadhayyan9@gmail.com', 0)"></i>
+					<i id="contact-linkedin" class="fa fa-linkedin-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://id.linkedin.com/in/ahmadhayyan', 1)"></i>
+					<i id="contact-github" class="fa fa-github-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://github.com/ahmadhayyan', 2)"></i>
+					<i id="contact-instagram" class="fa fa-instagram icon" onclick="setContactDetail('@ahmadhayyan_', 'https://www.instagram.com/ahmadhayyan_/', 3)"></i>
+					<i id="contact-twitter" class="fa fa-twitter-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://www.twitter.com/ahmadhayyan/', 4)"></i>
+				</div>
+				<div id="contact-detail">
+					<a href="mailto:ahmadhayyan9@gmail.com" rel="noopener noreferrer" target="_blank" class="contactlink">
+						ahmadhayyan9@gmail.com
+					</a>
 				</div>
 			</div>
 		</div>
@@ -148,4 +140,4 @@
 	</body>
 </html>
 
-<script type="text/javascript" src="res/mainJS.js"></script>
+<script type="text/javascript" src="res/mainJS.js?n=1"></script>
