@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="theme-color" content="#f09502"/>
+		<meta name="msapplication-navbutton-color" content="#f09502"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#f09502"/>
+		
+		<meta name="title" content="SMS Storage - Ahmad Hayyan"/>
+		<meta name="description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
+		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,software,desktop,windows"/>
+		<meta name="author" content="Ahmad Hayyan"/>
+		
+		<meta property="og:title" content="SMS Storage - Ahmad Hayyan"/>
+		<meta property="og:description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
+		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,software,desktop,windows"/>
+		<meta property="og:url" content="https://ahmadhayyan.github.io/project/sms-storage.html"/>
+		<meta property="og:image" content="https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"/>
+		
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="SMS Storage - Ahmad Hayyan"/>
+		<meta name="twitter:description" content="SMS Storage is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items."/>
+		<meta name="twitter:url" content="https://ahmadhayyan.github.io/project/sms-storage.html"/>
+		<meta name="twitter:image" content="https://1.bp.blogspot.com/-RhX7486qtwQ/X0JEfqMjuiI/AAAAAAAACLM/RcKeF9ZsYVoQwDUgHcaTGSWNfL4dZgP_gCLcBGAsYHQ/s1920/smsStorage.png"/>
+		
+		<title>SMS Storage - Ahmad Hayyan</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../res/mainStyle.css">
+	</head>
+	<body>
+		<header id="title_wrapper">
+			<a href="../" id="title">ahmadhayyan</a>
+			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
+			<span class="menuBtnWrapper">
+				<a id="aboutBtn" href="../" class="menuBtn">Home</a>
+				<a id="highlightedBtn" href="./" class="menuBtn">Projects</a>
+			</span>
+		</header>
+		
+		<div class="content content-project">
+			<span id="closeImg" style="display: none;" onclick="closeImage();">
+				<i class="fa fa-close icon" style="color:#282a36;"></i>
+			</span>
+			<span id="coverImg" style="display: none;" onclick="document.getElementById('closeImg').click();"></span>
+			
+			<span onclick="openImage('img');">
+				<div id="img" class="imgPost img4"></div>
+			</span>
+			
+			<p><b><text class="subtitle">SMS Storage</text></b> is a desktop application for managing company inventory to control so that the first item entered comes out first, thereby minimizing expired items. The application is connected to the office database that is used for invoice creation, therefore the application can read invoice items which makes warehouse employees prepare items faster than waiting for the admin to give several invoices to warehouse employees and prepare them at once. This application is also able to print invoice items with the serial number selected by the system which will be used by warehouse employees to prepare items.</p>
+			<p><text class="subtitle">Features :</text><br />
+			- Login system<br />
+			- Multiple user groups with their own accessibility<br />
+			- Manage office inventory (date of entry, item type, item name, serial number, quantity, expired date, status)<br />
+			- Read invoices created by the admin from the accounting app<br />
+			- Print invoices items</p>
+			<p><text class="subtitle">Benefits :</text><br />
+			- Minimizing expired items<br />
+			- Organized the placement of items<br />
+			- Warehouse Employees able to prepare items faster</p>
+			<br />
+			<div id="share-wrapper"></div>
+			<text class="tags">Tags: 2019, C++, Qt, PostgreSQL</text>
+		</div>
+		<footer id="copyright">Copyright © ahmadhayyan</footer>
+	</body>
+</html>
+
+<script type="text/javascript" src="../res/mainJS.js?n=1"></script>
