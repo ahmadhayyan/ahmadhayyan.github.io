@@ -212,6 +212,7 @@ img{
 .img7{ background-image: url("img/ecommerce_admin_panel.png"); }
 .img8{ background-image: url("img/ahNotification.png"); }
 .img9{ background-image: url("img/ahUpdater.png"); }
+.img10{ background-image: url("img/project-aim.png"); }
 
 .img__wrap {
 	position: relative;
@@ -230,7 +231,7 @@ img{
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 }
-.img__description_layer {
+.img__description_layer{
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -247,9 +248,12 @@ img{
 	transition: opacity .2s, visibility .2s;
 	word-break: break-word;
 }
-.img__description {
+.img__description{
 	transition: .2s;
 	transform: translateY(1em);
+}
+.img__sub__description{
+	font-size: 0.7em;
 }
 #moreProject{
 	color: #fff;
@@ -462,6 +466,9 @@ footer a{
 	}
 	#closeImg:hover{
 		background-color: var(--secondary-color);
+	}
+	#contact .icon:hover{
+		color: var(--secondary-color);
 	}
 	.contactlink:hover{
 		color: var(--content-color);
