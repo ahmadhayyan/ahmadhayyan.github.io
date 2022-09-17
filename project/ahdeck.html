@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="theme-color" content="#f09502"/>
+		<meta name="msapplication-navbutton-color" content="#f09502"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#f09502"/>
+		
+		<meta name="title" content="ahDeck - Ahmad Hayyan"/>
+		<meta name="description" content="ahDeck is an application or a virtual interface that can open many applications and files more easily and quickly."/>
+		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,ahdeck,software,desktop,windows"/>
+		<meta name="author" content="Ahmad Hayyan"/>
+		
+		<meta property="og:title" content="ahDeck - Ahmad Hayyan"/>
+		<meta property="og:description" content="ahDeck is an application or a virtual interface that can open many applications and files more easily and quickly."/>
+		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,ahdeck,software,desktop,windows"/>
+		<meta property="og:url" content="https://ahmadhayyan.github.io/project/ahdeck.html"/>
+		<meta property="og:image" content="https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png"/>
+		
+		<meta name="twitter:card" content="summary"/>
+		<meta name="twitter:title" content="ahDeck - Ahmad Hayyan"/>
+		<meta name="twitter:description" content="ahDeck is an application or a virtual interface that can open many applications and files more easily and quickly."/>
+		<meta name="twitter:url" content="https://ahmadhayyan.github.io/project/ahdeck.html"/>
+		<meta name="twitter:image" content="https://1.bp.blogspot.com/-mGq_TW5ndic/YAKkuYdisII/AAAAAAAACOQ/Vy7MPkQD_B0EACI0skds9ROwK6bz2lhVgCLcBGAsYHQ/s1056/ahDeck_thumbnail2.png"/>
+		
+		<title>ahDeck - Ahmad Hayyan</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="../res/mainStyle.css">
+	</head>
+	<body>
+		<header id="title_wrapper">
+			<a href="../" id="title">ahmadhayyan</a>
+			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
+			<span class="menuBtnWrapper">
+				<a id="aboutBtn" href="../" class="menuBtn">Home</a>
+				<a id="highlightedBtn" href="./" class="menuBtn">Projects</a>
+			</span>
+		</header>
+		
+		<div class="content content-project">
+			<span id="closeImg" style="display: none;" onclick="closeImage();">
+				<i class="fa fa-close icon" style="color:#282a36;"></i>
+			</span>
+			<span id="coverImg" style="display: none;" onclick="document.getElementById('closeImg').click();"></span>
+			
+			<span onclick="openImage('img');">
+				<div id="img" class="imgPost img1"></div>
+			</span>
+			
+			<p><b><text class="subtitle">ahDeck</text></b> is an application or a virtual interface that can open many applications and files more easily and quickly. ahDeck can also make your desktop look cleaner because you no longer need to put all the applications and files you regularly use on your desktop anymore.</p>
+			<p>Website : <a href="https://ahdeckstore.com/">ahdeckstore.com</a></p>
+			<p>
+				<text class="subtitle">&bull; Super Fast</text> - You can open the ahDeck interface from anywhere on your screen whenever you want.<br />
+				<text class="subtitle">&bull; Easy To Use</text> - Simply press Alt + Right Click and the ahDeck interface will appear around your cursor.<br />
+				<text class="subtitle">&bull; Customizable</text> - Customize the 12 buttons to open the apps and files you like and also change the button color at will.<br />
+				<text class="subtitle">&bull; Lifetime Support</text> - One-time purchase, so you can keep your ahDeck app updated.
+			</p>
+			<br />
+			<center><div id='videoContent'><iframe class="video" src="https://www.youtube.com/embed/9cQHrKBrzQs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></center>
+			<div class="flex-wrapper">
+				<img src="https://img.itch.zone/aW1hZ2UvODczODg3LzQ5MTUyMTIucG5n/original/lCMQxC.png" id="pict1" class="picts" onclick="openImage('', this.src);"><br />
+				<img src="https://img.itch.zone/aW1hZ2UvODczODg3LzQ5MTUyMTMucG5n/original/zT1Sqr.png" id="pict2" class="picts" onclick="openImage('', this.src);"><br />
+				<img src="https://img.itch.zone/aW1hZ2UvODczODg3LzkzNjMyMzcucG5n/original/fVZa%2B%2F.png" id="pict3" class="picts" onclick="openImage('', this.src);"><br />
+			</div>
+			<br /><br />
+			<div id="share-wrapper"></div>
+			<text class="tags">Tags: 2020, C++, Qt</text>
+		</div>
+		<footer id="copyright">Copyright © ahmadhayyan</footer>
+	</body>
+</html>
+
+<script type="text/javascript" src="../res/mainJS.js?n=1"></script>
