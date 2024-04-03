@@ -25,7 +25,7 @@ div {
 #center {
   position: relative;
   height: 100%;
-  width: 512px;
+  width: clamp(0px, 100%, 512px);
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@ div {
   position: absolute;
   top: 50%;
   margin-top: -270px;
-  width:  512px;
+  width:  clamp(0px, 100%, 512px);
   height: 570px;
 }
 

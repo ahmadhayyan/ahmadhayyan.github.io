@@ -170,8 +170,7 @@ var koala = {
       // Create the SVG ellement
       vis = d3.select(selector)
         .append("svg")
-          .attr("width", maxSize)
-          .attr("height", maxSize);
+          .attr("viewBox", `0 0 512 512`);
     } else {
       vis.selectAll('circle')
         .remove();
