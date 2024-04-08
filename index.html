@@ -5,177 +5,443 @@
 		<meta name="robots" content="index, follow" />
 		
 		<meta name="title" content="Ahmad Hayyan Personal Website"/>
-		<meta name="description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
-		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,godot,gdscript"/>
+		<meta name="description" content="Hi! My name is Ahmad Hayyan, a software engineer from Indonesia. Here on this website, you can see previous projects I have worked on."/>
+		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,godot,gdscript,nodejs"/>
 		<meta name="author" content="Ahmad Hayyan"/>
 		
 		<meta property="og:title" content="Ahmad Hayyan Personal Website"/>
-		<meta property="og:description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
-		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,godot,gdscript"/>
-		<meta property="og:url" content="https://ahmadhayyan.github.io"/>
-		<meta property="og:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		<meta property="og:description" content="Hi! My name is Ahmad Hayyan, a software engineer from Indonesia. Here on this website, you can see previous projects I have worked on."/>
+		<meta property="og:keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css,js,godot,gdscript,nodejs"/>
+		<meta property="og:url" content="https://ahmadhayyan.thedev.id"/>
+		<meta property="og:image" content="https://ahmadhayyan.thedev.id/res/img/ah_image.jpg"/>
 		
 		<meta name="twitter:card" content="summary"/>
 		<meta name="twitter:title" content="Ahmad Hayyan Personal Website"/>
-		<meta name="twitter:description" content="Hi, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
-		<meta name="twitter:url" content="https://ahmadhayyan.github.io"/>
-		<meta name="twitter:image" content="https://ahmadhayyan.github.io/res/img/ah_image.jpg"/>
+		<meta name="twitter:description" content="Hi! My name is Ahmad Hayyan, a software engineer from Indonesia. Here on this website, you can see previous projects I have worked on."/>
+		<meta name="twitter:url" content="https://ahmadhayyan.thedev.id"/>
+		<meta name="twitter:image" content="https://ahmadhayyan.thedev.id/res/img/ah_image.jpg"/>
 		
 		<title>Ahmad Hayyan</title>
 		
-		<meta name="theme-color" content="#f09502"/>
-		<meta name="msapplication-navbutton-color" content="#f09502"/>
+		<meta name="theme-color" content="#f9f5f2"/>
+		<meta name="msapplication-navbutton-color" content="#f9f5f2"/>
 		<meta name="apple-mobile-web-app-capable" content="yes"/>
-		<meta name="apple-mobile-web-app-status-bar-style" content="#f09502"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#f9f5f2"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="res/mainStyle.css">
+		<script src="https://kit.fontawesome.com/2ac6720705.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="res/mainStyle.css?v=20240408">
 	</head>
 	<body>
-		<header id="title_wrapper">
-			<a href="./" id="title">ahmadhayyan</a>
-			<span id="mobileMenu" class="menuMobile" onclick="mobileMenu();"><i class="fa fa-bars icon"></i></span>
-			<span class="menuBtnWrapper">
-				<a id="aboutBtn" href="./" class="menuBtn">Home</a>
-				<a id="highlightedBtn" href="./project" class="menuBtn">Projects</a>
-			</span>
-		</header>
-		<div id="Home">			
-			<div class="content">
-				<div id="ah_image" class="desktopOnly"><iframe align="center" frameborder="yes" height="99%" name="frame1" scrolling="no" src="./res/koala/index.html" style="border: 0px solid;" width="99%"></iframe></div>
-				<img src="res/img/ah_image_mobile.jpg" class="mobileOnly" style="width: 100%; margin-bottom: 10px; cursor: default;"/>
-				<div id="about">
-					<p class="reveal fade"><b>Hi, I'm Ahmad Hayyan</b>, located in Indonesia. I am an engineering graduate in computer engineering and I am interested in software and web development. Here on this website, you can see the projects I have worked on.</p>
-					<br />
-					<div id="skill_fulltext" class="reveal fade-left">
-						<text id="skill_iam">I AM A</text>
-						<div id="skill">
-							<span id="skill_span">
-								SOFTWARE ENGINEER<br />
-								FULL-STACK DEVELOPER<br />
-								EMBEDDED SYSTEMS ENGINEER<br />
-							</span>
-						</div>
+		<header>
+			<nav>
+				<span class="wrapper flex">
+					<h3>
+						<a href="/">Ahmad <span>Hayyan</span></a>
+					</h3>
+					<span class="flex-spacer"></span>
+					<svg onclick="toggleMenu();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+					<span class="flex menu">
+						<a href="/#details" class="hover-underline">About</a>
+						<a href="/#technologies" class="hover-underline">Skills</a>
+						<a href="/#contact" class="hover-underline">Contact</a>
+						<a href="/#projects" class="primary-button">My work</a>
+					</span>
+				</span>
+			</nav>
+			<div id="about" class="wrapper flex">
+				<span id="about-text">
+					<h3>Hello There</h3>
+					<h1>
+						<b>I AM A</b>
+						<span>Software Engineer</span>
+					</h1>
+					<h3>With Expertise in <span>Software and Web Development</span></h3>
+				</span>
+				<span class="flex-spacer"></span>
+				<div id="ah-image">
+					<div class="blob-wrapper">
+						<iframe align="center" frameborder="yes" height="99%" name="frame1" scrolling="no" src="./res/koala/index.html?img=ah_image.jpg" style="height: 587px; border: 0px solid;" width="99%"></iframe>
 					</div>
-				</div>
-				
-				<div id="extrasWrapper">
-					<div class="extras reveal fade-bottom">
-						<center><b>Software<br/>Engineer<br class="mobileOnly"/></b>
-						<br /><br />
-						<i class="fa fa-desktop icon" style="color:#383a59;"></i>
-						<br /><br />
-						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>QtCreator, Visual Studio, MySQL, PostgreSQL</text></center>
-					</div>
-					<div class="extras reveal fade-bottom">
-						<center><b>Full-Stack<br/>Developer<br class="mobileOnly"/></b>
-						<br /><br />
-						<i class="fa fa-globe icon" style="color:#383a59;"></i>
-						<br /><br />
-						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>PHP, HTML, CSS, JS, SQL<br/><br/><b>Dev Tools:</b><br/>GitHub, Apache, Heroku, PHP Mailer, MySQL, PostgreSQL</text></center>
-					</div>
-					<div class="extras reveal fade-bottom">
-						<center><b>Embedded<text class="desktopOnly"> </text><br class="mobileOnly"/>Systems<br/>Engineer</b>
-						<br /><br />
-						<i class="fa fa-building-o icon" style="color:#383a59;"></i>
-						<br /><br />
-						<text class="extras_subtitle"><b>Languages I Speak:</b><br/>C++, Python, SQL<br/><br/><b>Dev Tools:</b><br/>Arduino, Raspberry Pi, ESP, MySQL, PostgreSQL</text></center>
-					</div>
-				</div>
-				<br/><br/>
-				
-				<text class="content_title">Featured Projects.</text>
-				<div id="projectWrapper" style="display: grid; justify-content: center;">
-					<a href="project/web-store-and-admin-panel.html" class="reveal fade-left">
-						<div class="img__wrap">
-							<img class="imgMoreProject img__img img7" />
-							<div class="img__description_layer">
-								<p class="img__description">
-									WEB STORE AND ADMIN PANEL
-									<br />
-									<span class="img__sub__description">
-										WEB APPLICATION
-									</span>
-								</p>
-							</div>
-						</div>
-					</a>
-					<a href="project/ahdeck.html" class="reveal fade-right">
-						<div class="img__wrap">
-							<img class="imgMoreProject img__img img1" />
-							<div class="img__description_layer">
-								<p class="img__description">
-									AHDECK
-									<br />
-									<span class="img__sub__description">
-										SOFTWARE
-									</span>
-								</p>
-							</div>
-						</div>
-					</a>
-					<a href="project/face-detection.html" class="reveal fade-left">
-						<div class="img__wrap">
-							<img class="imgMoreProject img__img img2" />
-							<div class="img__description_layer">
-								<p class="img__description">
-									FACE DETECTION SYSTEM FOR ADVERTISING PLACEMENT
-									<br />
-									<span class="img__sub__description">
-										DEVICE
-									</span>
-								</p>
-							</div>
-						</div>
-					</a>
-					<a href="project/sms-storage.html" class="reveal fade-right">
-						<div class="img__wrap">
-							<img class="imgMoreProject img__img img4" />
-							<div class="img__description_layer">
-								<p class="img__description">
-									SMS STORAGE
-									<br />
-									<span class="img__sub__description">
-										SOFTWARE
-									</span>
-								</p>
-							</div>
-						</div>
-					</a>
-					<a href="project/project-aim.html" class="reveal fade-left">
-						<div class="img__wrap">
-							<img class="imgMoreProject img__img img10" />
-							<div class="img__description_layer">
-								<p class="img__description">
-									PROJECT AIM
-									<br />
-									<span class="img__sub__description">
-										GAME
-									</span>
-								</p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<a id="moreProject" href="project">More Projects &#x2192;</a>
-				<br /><br /><br/><br/>
-
-				<div id="contact" class="contact-wrapper">
-					Contact Me:
-					<i id="contact-email" class="fa fa-envelope-square icon home-contact-icon" onclick="setContactDetail('ahmadhayyan9@gmail.com', 'mailto:ahmadhayyan9@gmail.com', 0)"></i>
-					<i id="contact-linkedin" class="fa fa-linkedin-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://id.linkedin.com/in/ahmadhayyan', 1)"></i>
-					<i id="contact-github" class="fa fa-github-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://github.com/ahmadhayyan', 2)"></i>
-					<i id="contact-instagram" class="fa fa-instagram icon" onclick="setContactDetail('@ahmadhayyan_', 'https://www.instagram.com/ahmadhayyan_/', 3)"></i>
-					<i id="contact-twitter" class="fa fa-twitter-square icon" onclick="setContactDetail('@ahmadhayyan', 'https://www.twitter.com/ahmadhayyan/', 4)"></i>
-				</div>
-				<div id="contact-detail">
-					<a href="mailto:ahmadhayyan9@gmail.com" rel="noopener noreferrer" target="_blank" class="contactlink">
-						ahmadhayyan9@gmail.com
-					</a>
 				</div>
 			</div>
+		</header>
+
+		<section id="details" class="wrapper">
+			<center class="title">
+				<h2>About</h2>
+				<p>A few things about me.</p>
+			</center>
+            <p>
+                Hi &#128075; My name is Ahmad Hayyan, a software engineer from Indonesia.
+				My primary focus is on software and web development, as I am deeply interested in these fields.
+				My expertise and experience in these areas have allowed me to proficiently design, develop, deploy, and maintain high-quality software and web applications.
+            </p>
+			<p>
+				In my free time, I enjoy watching movies, playing games, or working on personal programming projects as I am always looking for new challenges to keep myself engaged and motivated.
+			</p>
+		</section>
+
+		<section id="technologies" class="wrapper">
+			<center class="title">
+				<h2>Technologies</h2>
+				<p>Tools and technologies I have used for my work.</p>
+			</center>
+			<div class="grid">
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+							<g fill="none" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)">
+								<path d="M22.903,3.286c0.679,-0.381 1.515,-0.381 2.193,0c3.355,1.883 13.451,7.551 16.807,9.434c0.679,0.38 1.097,1.084 1.097,1.846c0,3.766 0,15.101 0,18.867c0,0.762 -0.418,1.466 -1.097,1.847c-3.355,1.883 -13.451,7.551 -16.807,9.434c-0.679,0.381 -1.515,0.381 -2.193,0c-3.355,-1.883 -13.451,-7.551 -16.807,-9.434c-0.678,-0.381 -1.096,-1.084 -1.096,-1.846c0,-3.766 0,-15.101 0,-18.867c0,-0.762 0.418,-1.466 1.097,-1.847c3.354,-1.883 13.452,-7.551 16.806,-9.434z" fill="#282a36"></path>
+								<path d="M5.304,34.404c-0.266,-0.356 -0.304,-0.694 -0.304,-1.149c0,-3.744 0,-15.014 0,-18.759c0,-0.758 0.417,-1.458 1.094,-1.836c3.343,-1.872 13.405,-7.507 16.748,-9.38c0.677,-0.379 1.594,-0.371 2.271,0.008c3.343,1.872 13.371,7.459 16.714,9.331c0.27,0.152 0.476,0.335 0.66,0.576z" fill="#282a36"></path>
+								<path class="hover-black" d="M24,10c7.727,0 14,6.273 14,14c0,7.727 -6.273,14 -14,14c-7.727,0 -14,-6.273 -14,-14c0,-7.727 6.273,-14 14,-14zM24,17c3.863,0 7,3.136 7,7c0,3.863 -3.137,7 -7,7c-3.863,0 -7,-3.137 -7,-7c0,-3.864 3.136,-7 7,-7z" fill="#ddd"></path>
+								<path d="M42.485,13.205c0.516,0.483 0.506,1.211 0.506,1.784c0,3.795 -0.032,14.589 0.009,18.384c0.004,0.396 -0.127,0.813 -0.323,1.127l-19.084,-10.5z" fill="#282a36"></path>
+								<path class="hover-black" d="M31,21h2v6h-2zM38,21h2v6h-2z" fill="#ddd"></path>
+								<path class="hover-black" d="M29,23h6v2h-6zM36,23h6v2h-6z" fill="#ddd"></path>
+							</g></g>
+						</svg>
+					</div>
+					<div class="feature-title">C++</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<i class="fa-brands fa-python icon"></i>
+					</div>
+					<div class="feature-title">Python</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+						</svg>
+						<i class="fa-brands fa-php icon"></i>
+					</div>
+					<div class="feature-title">PHP</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+						</svg>
+						<i class="fa-brands fa-node-js icon"></i>
+					</div>
+					<div class="feature-title">Node.js</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+							<path d="M 9.433594 8 C 8.90625 8 8.472656 8.179688 8.101563 8.550781 C 6.265625 10.375 4.425781 12.191406 2.578125 14.003906 C 2.1875 14.386719 2 14.832031 2 15.367188 C 2.007813 23.40625 2.007813 39.382813 2.007813 40.882813 L 2.078125 41.996094 L 3.078125 41.996094 C 4.550781 41.996094 28.523438 41.992188 40.550781 42 C 41.09375 42 41.546875 41.8125 41.945313 41.421875 C 43.761719 39.609375 45.585938 37.808594 47.417969 36.015625 C 47.808594 35.625 48 35.171875 48 34.617188 C 47.992188 26.246094 48 9 48 9 L 48 8 Z M 19.09375 14 C 20.035156 14.003906 20.96875 14.082031 21.894531 14.320313 C 23.773438 14.800781 25.109375 15.902344 25.894531 17.660156 C 26.355469 18.695313 26.625 19.78125 26.78125 20.894531 C 26.945313 22.089844 27.019531 23.296875 26.992188 24.5 C 26.957031 26.0625 26.847656 27.613281 26.414063 29.125 C 26.109375 30.183594 25.644531 31.160156 24.871094 31.964844 C 24.578125 32.273438 24.238281 32.539063 23.902344 32.84375 C 24.679688 34.082031 25.464844 35.335938 26.28125 36.632813 C 25.292969 37.089844 24.328125 37.535156 23.316406 38 C 22.464844 36.621094 21.621094 35.253906 20.785156 33.90625 C 19.121094 34.132813 17.503906 34.082031 15.910156 33.664063 C 14.074219 33.183594 12.769531 32.09375 12.027344 30.359375 C 11.613281 29.394531 11.371094 28.394531 11.21875 27.367188 C 11.054688 26.269531 10.988281 25.160156 11 24.050781 C 11.019531 22.40625 11.117188 20.765625 11.589844 19.171875 C 11.761719 18.589844 11.980469 18.015625 12.234375 17.464844 C 12.964844 15.882813 14.21875 14.890625 15.890625 14.394531 C 16.628906 14.179688 17.378906 14.054688 18.144531 14.019531 C 18.460938 14.007813 18.777344 14 19.09375 14 Z M 31 16 L 34 16 L 34 20 L 38 20 L 38 23 L 34 23 C 34 23 33.988281 26.109375 34 28 C 34.003906 28.53125 34.019531 29.347656 34.0625 29.875 C 34.070313 30.015625 34.109375 30.152344 34.144531 30.292969 C 34.238281 30.628906 34.460938 30.851563 34.796875 30.921875 C 35.0625 30.976563 35.335938 31.003906 35.605469 31 C 36.230469 30.988281 37.019531 30.890625 37.644531 30.867188 C 37.703125 30.863281 37.757813 30.878906 37.863281 30.886719 C 37.929688 31.671875 37.972656 32.765625 38 33.582031 C 37.714844 33.636719 37.449219 33.6875 37.1875 33.734375 C 36.253906 33.902344 35.148438 34.050781 34.203125 33.96875 C 33.707031 33.921875 33.222656 33.820313 32.761719 33.625 C 32.15625 33.363281 31.726563 32.9375 31.46875 32.328125 C 31.160156 31.613281 31 30.769531 31 30 L 31 23 L 29 23 L 29 20 L 31 20 Z M 18.996094 17.019531 C 18.402344 17.019531 17.808594 17.089844 17.21875 17.234375 C 16.171875 17.496094 15.386719 18.050781 14.921875 18.9375 C 14.808594 19.148438 14.703125 19.367188 14.621094 19.589844 C 14.207031 20.664063 14.042969 21.78125 14.011719 22.910156 C 13.984375 23.953125 14.007813 25 14.0625 26.042969 C 14.117188 26.972656 14.308594 27.882813 14.667969 28.765625 C 15.113281 29.855469 15.960938 30.539063 17.21875 30.820313 C 18.417969 31.089844 19.621094 31.085938 20.816406 30.8125 C 21.992188 30.539063 22.828125 29.910156 23.25 28.878906 C 23.359375 28.617188 23.457031 28.347656 23.535156 28.074219 C 23.90625 26.789063 23.945313 25.476563 24 23.785156 C 23.941406 23.175781 23.882813 22.191406 23.757813 21.214844 C 23.65625 20.40625 23.425781 19.621094 23.019531 18.886719 C 22.546875 18.03125 21.789063 17.484375 20.769531 17.234375 C 20.179688 17.089844 19.585938 17.019531 18.996094 17.019531 Z"></path>
+						</svg>
+					</div>
+					<div class="feature-title">Qt</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+						</svg>
+						<i class="fa-brands fa-java icon"></i>
+					</div>
+					<div class="feature-title">Java</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+						</svg>
+						<i class="fa-brands fa-react icon"></i>
+					</div>
+					<div class="feature-title">React</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<i class="fa-brands fa-angular icon"></i>
+					</div>
+					<div class="feature-title">Angular</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+						</svg>
+						<i class="fa-brands fa-github icon"></i>
+					</div>
+					<div class="feature-title">GitHub</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+						</svg>
+						<i class="fa-brands fa-aws icon"></i>
+					</div>
+					<div class="feature-title">AWS</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<i class="fa-solid fa-circle icon"></i>
+					</div>
+					<div class="feature-title">Deta Space</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+							<path d="M 40 2 L 12 2 C 9.242188 2 7 4.242188 7 7 L 7 43 C 7 45.757813 9.242188 48 12 48 L 40 48 C 42.757813 48 45 45.757813 45 43 L 45 7 C 45 4.242188 42.757813 2 40 2 Z M 16.558594 40.914063 L 16.558594 30.964844 L 21.535156 35.941406 Z M 35.261719 40.945313 L 30.496094 40.945313 L 30.496094 23.472656 C 30.496094 23.472656 31.632813 19.289063 16.496094 25.183594 C 16.46875 25.257813 16.46875 9.023438 16.46875 9.023438 L 21.414063 8.996094 L 21.414063 19.394531 C 21.414063 19.394531 35.261719 13.941406 35.261719 23.53125 Z M 33.3125 15.289063 L 28.066406 15.289063 C 29.957031 12.980469 31.664063 9.023438 31.664063 9.023438 L 37.089844 9.023438 C 37.089844 9.023438 36.160156 11.601563 33.3125 15.289063 Z"></path>
+						</svg>
+					</div>
+					<div class="feature-title">Heroku</div>
+				</span>
+			</div>
+			<div class="grid hide-first" style="margin-bottom: 0;">
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+							<path d="M 3.125 1 C 2.219 1 1.5030625 1.4805 1.1640625 2.3125 C 1.0570625 2.5695 1.0029531 2.8420469 1.0019531 3.1230469 C 1.0009531 4.0540469 1.6009375 4.8097188 1.9609375 5.2617188 C 2.0239375 5.3407187 2.080625 5.4110938 2.140625 5.4960938 L 2.3027344 5.7109375 C 2.4637344 5.9219375 2.6470781 6.16125 2.7050781 6.28125 C 2.7240781 6.33625 2.7492031 6.4326875 2.7832031 6.5546875 C 2.9402031 7.1196875 3.2332187 8.16975 3.6992188 8.96875 C 3.8872187 9.29075 4.1517969 9.6954687 4.3417969 9.9804688 C 4.2147969 10.616469 4 11.788 4 12.5 C 4 13.75 4.2592188 14.753875 4.8242188 15.671875 C 5.0332187 15.999875 5.671 17 6.75 17 C 7.133 17 7.7694062 16.850391 7.9414062 15.900391 C 8.7064063 16.887391 10 18.125 12 19 C 12 19 8.2507969 14.625438 7.5917969 11.898438 C 7.5917969 11.898437 6.874625 12.625375 6.265625 14.109375 C 6.083625 13.651375 6 13.135 6 12.5 C 6 11.873 6.2758125 10.471375 6.3828125 9.984375 L 6.4765625 9.5605469 L 6.2304688 9.203125 C 6.2264687 9.196125 5.7227344 8.4688906 5.4277344 7.9628906 C 5.0917344 7.3868906 4.8439375 6.4955781 4.7109375 6.0175781 C 4.6459375 5.7845781 4.594875 5.6159531 4.546875 5.5019531 C 4.371875 5.1229531 4.115625 4.7900937 3.890625 4.4960938 L 3.765625 4.3300781 C 3.702625 4.2390781 3.6193906 4.133625 3.5253906 4.015625 C 3.3423906 3.785625 3.0017188 3.3570312 3.0117188 3.0820312 L 3.1230469 3.0039062 L 3.125 3 C 3.92 3 4.9440781 3.5643437 5.3300781 3.7773438 C 5.4560781 3.8463438 5.5486563 3.8940156 5.5976562 3.9160156 L 5.7714844 3.9921875 L 6.1132812 4.0039062 C 6.5602813 4.0139062 7.9189063 4.0456875 8.8789062 4.4296875 C 10.629906 5.1296875 11.598031 5.830375 12.582031 7.109375 C 14.906031 10.131375 15.763484 14.044984 15.771484 14.083984 L 15.896484 14.648438 L 16.443359 14.826172 C 16.462359 14.833172 17.992922 15.344641 19.419922 16.681641 C 17.624922 17.125641 17 18 17 18 C 17 18 17.476 18.928 19.75 20.375 C 21.125 21.25 21.875 21.875 23 23 C 23 23 21.875688 20.499813 20.304688 18.507812 C 21.500687 18.124813 22.970703 17.925781 22.970703 17.925781 L 22.060547 16.664062 C 20.562547 14.587063 18.553656 13.538859 17.597656 13.130859 C 17.265656 11.864859 16.262969 8.614625 14.167969 5.890625 C 12.968969 4.331625 11.693094 3.3993125 9.6210938 2.5703125 C 8.3940937 2.0803125 6.9187188 2.0218594 6.2617188 2.0058594 C 5.6867187 1.6898594 4.409 1 3.125 1 z M 7.1875 5 C 7.1875 5 6.75 5 6.25 5.125 L 7.625 6.9980469 C 8 6.5000469 8 5.9179688 8 5.9179688 C 8 5.9179688 7.7505 5.25 7.1875 5 z"></path>
+						</svg>
+					</div>
+					<div class="feature-title">MySQL</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+							<path d="M 35.199219 2.101563 C 33.699219 2.101563 32.398438 2.398438 31.199219 2.699219 C 33.300781 3.597656 34.601563 4.699219 35.300781 5.199219 C 36.902344 6.597656 37.800781 8 39.402344 10.300781 C 39.699219 10.800781 40.199219 11.5 40.5 12.597656 C 40.800781 13.597656 40.800781 14.398438 40.800781 15.199219 C 40.800781 16.300781 40.699219 17.199219 40.597656 18.097656 C 40.5 18.800781 40.5 19.101563 40.402344 19.300781 C 40.402344 19.402344 40.402344 19.5 40.300781 19.699219 C 40.300781 20.199219 40.300781 20.402344 40.402344 20.800781 C 40.402344 21.199219 40.5 21.601563 40.5 22.300781 C 40.601563 23.601563 40.601563 24.5 40.402344 25.597656 L 40.402344 26 C 40.199219 26.898438 40 27.800781 39.5 28.597656 C 39.601563 28.800781 39.699219 28.898438 39.800781 29.097656 C 40.300781 28.398438 40.699219 27.699219 41.097656 26.902344 C 42.300781 24.699219 43 22.800781 43.5 21.402344 C 44.398438 18.800781 44.898438 16.898438 45.199219 15.5 C 45.898438 12.5 46 11.101563 45.699219 9.5 C 45.699219 9 45.5 8.097656 45 7.199219 C 43.898438 5.199219 42.199219 4.300781 41 3.699219 C 40.199219 3.300781 38.097656 2.199219 35.199219 2.101563 Z M 13.535156 2.542969 C 12.382813 2.519531 10.976563 2.648438 9.398438 3.398438 C 8.898438 3.601563 7.398438 4.300781 6.199219 5.898438 C 5.398438 6.898438 4.800781 8.398438 4.5 10.097656 C 4.199219 11.597656 4.097656 13.402344 4.699219 16.800781 C 5.097656 19.199219 5.5 20.800781 6.300781 24.097656 C 6.402344 24.5 7 26.300781 8.300781 30.300781 L 8.398438 30.5 C 8.601563 31.199219 9.199219 32.699219 10.5 34.199219 C 11.398438 35.199219 12.199219 35.800781 12.902344 35.800781 L 13.097656 35.800781 C 14.398438 35.800781 15.300781 34.800781 16.097656 34 C 16.097656 33.898438 18 31.601563 18.699219 30.800781 C 18.597656 30.699219 18.402344 30.699219 18.300781 30.597656 C 17.101563 29.898438 16.199219 28.800781 15.5 27.597656 C 14.300781 25.398438 14.398438 23.199219 14.597656 22.097656 L 14.699219 20.402344 C 14.300781 17.699219 14.402344 15.101563 14.902344 12.5 C 15.300781 10.300781 15.800781 8.101563 17.597656 5.800781 C 18.199219 5 18.898438 4.300781 19.597656 3.800781 C 18 3.101563 16.300781 2.699219 14.597656 2.601563 C 14.273438 2.574219 13.917969 2.550781 13.535156 2.542969 Z M 26.097656 3.398438 C 25.597656 3.398438 25.097656 3.398438 24.597656 3.5 C 22.597656 3.898438 20.699219 5 19.199219 6.898438 C 17.699219 8.800781 17.300781 10.597656 16.902344 12.699219 C 16.699219 13.5 16.699219 14.199219 16.597656 15 C 17.199219 14.5 18 13.898438 19.199219 13.597656 C 19.898438 13.398438 21.699219 12.800781 23.199219 13.699219 C 23.699219 14 24.398438 14.601563 25.097656 16.300781 C 26.597656 20.5 25.101563 24.800781 24.902344 25.199219 C 24.800781 25.597656 24.601563 25.898438 24.5 26.097656 C 24.300781 26.597656 24.101563 27 23.902344 27.800781 C 23.800781 28.5 23.699219 29.101563 23.699219 29.800781 C 24 29.800781 24.300781 29.898438 24.597656 30.097656 C 25.097656 30.597656 25.199219 31.300781 25.300781 31.597656 C 25.5 33.199219 25.5 35.199219 25.5 37.199219 C 25.5 38.800781 25.5 40.300781 25.597656 41.300781 C 25.800781 43.601563 26.5 45.199219 27.5 46 C 28.199219 46.601563 29.097656 46.597656 29.597656 46.699219 L 29.800781 46.699219 C 31.300781 46.699219 33.699219 45.699219 34.597656 44.300781 C 35.097656 43.5 35.300781 42.800781 35.5 41.800781 C 35.601563 41.199219 35.597656 40.902344 35.699219 40.300781 C 35.699219 40 35.800781 39.5 35.800781 38.902344 C 35.800781 38.402344 35.898438 37.800781 36 37.097656 C 36.101563 35.398438 36.398438 33.402344 36.5 32.300781 C 36.601563 31 37.199219 29.898438 37.699219 29.199219 C 37 29.097656 36.300781 28.5 35.902344 27.5 C 35.300781 26.398438 35.199219 26.097656 35.097656 25.597656 C 35 25.199219 34.800781 24.699219 34.097656 23.199219 C 32.597656 19.800781 32.402344 18.800781 32.402344 18 C 32.300781 16.898438 32.199219 15.402344 33.402344 14.402344 C 35.199219 12.800781 37.5 12.902344 38.699219 13.300781 L 38.699219 13.097656 C 38.5 12.300781 38.101563 11.699219 37.800781 11.300781 C 36.300781 9 35.5 7.800781 34.097656 6.601563 C 33.5 6.101563 32 4.898438 29.800781 4.101563 C 28.800781 3.800781 27.597656 3.398438 26.097656 3.398438 Z M 37.152344 15.125 C 36.425781 15.074219 35.5 15.199219 34.699219 15.902344 C 34.300781 16.300781 34.300781 17.101563 34.402344 17.800781 C 34.402344 18.300781 34.5 19 36 22.402344 C 36.699219 24 36.898438 24.5 37 24.902344 C 37.101563 25.300781 37.199219 25.5 37.800781 26.597656 C 37.902344 26.800781 38 27 38.199219 27.199219 C 38.398438 26.898438 38.5 26.398438 38.597656 25.597656 L 38.699219 25.300781 C 38.898438 24.402344 38.800781 23.699219 38.800781 22.5 C 38.800781 21.898438 38.699219 21.5 38.699219 21.199219 C 38.597656 20.699219 38.597656 20.300781 38.597656 19.699219 C 38.398438 19.398438 38.398438 19.300781 38.5 19.097656 C 38.5 18.898438 38.597656 18.601563 38.699219 18 C 38.800781 17.199219 38.902344 16.5 38.902344 15.699219 C 38.699219 15.597656 38.601563 15.5 38.402344 15.402344 C 38.402344 15.402344 37.875 15.175781 37.152344 15.125 Z M 21.515625 15.519531 C 20.878906 15.445313 20.148438 15.652344 19.699219 15.800781 C 18.597656 16.101563 17.902344 16.800781 17.402344 17.199219 C 17.101563 17.5 16.800781 17.800781 16.5 18.199219 C 16.5 18.898438 16.597656 19.601563 16.699219 20.300781 L 16.699219 20.402344 L 16.5 22.402344 C 16.300781 23.300781 16.199219 25 17.199219 26.699219 C 17.699219 27.699219 18.402344 28.5 19.300781 29 C 19.902344 29.398438 20.699219 29.699219 21.597656 29.902344 C 21.597656 29.199219 21.699219 28.398438 21.800781 27.699219 C 22 26.699219 22.199219 26.199219 22.5 25.597656 C 22.601563 25.300781 22.699219 25.101563 22.902344 24.800781 C 23 24.5 24.398438 20.699219 23.097656 17.199219 C 22.800781 16.398438 22.5 15.898438 22.097656 15.699219 C 21.925781 15.597656 21.722656 15.542969 21.515625 15.519531 Z M 36.1875 16.089844 C 36.449219 16.074219 36.699219 16.097656 36.800781 16.199219 C 37.101563 16.398438 36.699219 16.898438 36.597656 17 C 36.5 17.101563 36.300781 17.300781 36 17.402344 C 35.601563 17.5 35.300781 17.199219 35.199219 17.199219 C 35.097656 17.097656 34.800781 16.800781 34.902344 16.5 C 35 16.300781 35.101563 16.300781 35.5 16.199219 C 35.648438 16.148438 35.925781 16.101563 36.1875 16.089844 Z M 21.15625 16.917969 C 21.492188 16.894531 21.773438 17.023438 22 17.097656 C 22.300781 17.199219 22.597656 17.300781 22.597656 17.5 C 22.699219 17.800781 22.402344 18 22.300781 18.097656 C 22 18.398438 21.5 18.402344 21.5 18.402344 C 21 18.402344 20.699219 18.101563 20.5 17.800781 C 20.398438 17.699219 20.300781 17.5 20.402344 17.300781 C 20.5 17.101563 20.699219 17 20.800781 17 C 20.925781 16.949219 21.042969 16.925781 21.15625 16.917969 Z M 39.5 30 C 39 30.699219 38.300781 31.601563 38.199219 32.800781 C 38.199219 33 38.199219 33.101563 38.097656 33.300781 C 38.898438 33.5 39.601563 33.5 40.300781 33.402344 C 41.902344 33.199219 43 32.398438 43.199219 32.199219 C 43.898438 31.699219 44.800781 30.699219 44.597656 30.300781 C 44.5 30.101563 44.199219 30.199219 42.597656 30.300781 C 42.199219 30.300781 41 30.601563 40.199219 30.402344 L 40 30.402344 C 39.800781 30.300781 39.601563 30.199219 39.5 30 Z M 22.097656 32 C 21.898438 32.300781 21.601563 32.5 21.402344 32.699219 C 20.601563 33.199219 19.597656 33.601563 18.597656 33.800781 C 17.699219 34.101563 17.199219 34.101563 17.199219 34.402344 C 17.097656 34.800781 18.097656 35.300781 18.597656 35.5 C 20.300781 36.199219 22 35.800781 22.300781 35.699219 C 22.5 35.597656 23 35.398438 23.5 35.097656 C 23.5 34 23.402344 33 23.300781 32.199219 L 23.300781 32.097656 L 23.199219 32.097656 C 22.898438 32.097656 22.5 32.101563 22.097656 32 Z"></path>
+						</svg>
+					</div>
+					<div class="feature-title">PostgreSQL</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+						</svg>
+						<i class="fa-solid fa-database icon"></i>
+					</div>
+					<div class="feature-title">DynamoDB</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+						</svg>
+						<i class="fa-solid fa-database icon"></i>
+					</div>
+					<div class="feature-title">Deta Base</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<i class="fa-brands fa-html5 icon"></i>
+					</div>
+					<div class="feature-title">HTML</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+						</svg>
+						<i class="fa-brands fa-css3-alt icon"></i>
+					</div>
+					<div class="feature-title">CSS</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
+						</svg>
+						<i class="fa-brands fa-js icon"></i>
+					</div>
+					<div class="feature-title">JavaScript</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
+						</svg>
+						<i class="fa-brands fa-sass icon"></i>
+					</div>
+					<div class="feature-title">SASS</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
+						</svg>
+						<i class="fa-brands fa-git-alt icon"></i>
+					</div>
+					<div class="feature-title">Git</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+						  <path stroke="none" stroke-width="0" fill="#ccc" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" height="100" width="100" viewBox="0 0 1024 1024">
+							<path d="m417.61523 76.875c-42.39203 9.424151-84.32671 22.54494-123.64257 42.33398.89912 34.71618 3.14362 67.97967 7.69336 101.76758-15.26846 9.78214-31.31507 18.17757-45.57618 29.62891-14.49005 11.14747-29.2896 21.81231-42.41015 34.84961-26.21196-17.33728-53.95467-33.6299-82.53516-48.01172-30.80748 33.1552-59.61329 68.94006-83.14453 108.98437 18.493057 29.02877 38.32949 58.20569 56.69922 80.95899v197.7832 25.1211 22.86132c.44956.00417.89835.02088 1.34375.0625l150.66992 14.52735c7.89231.76176 14.07749 7.11448 14.62695 15.02343l4.64649 66.50977 131.42969 9.37891 9.05468-61.38672c1.17386-7.95891 8.00029-13.85742 16.05078-13.85742h158.96094c8.04633 0 14.87302 5.89851 16.04688 13.85742l9.05468 61.38672 131.4336-9.37891 4.64258-66.50977c.55362-7.90895 6.73464-14.25751 14.62695-15.02343l150.61133-14.52735c.4454-.04162.89028-.05833 1.33984-.0625v-19.61132l.0625-.01954v-226.13476c21.2165-26.70928 41.30684-56.1715 56.69922-80.95899-23.52291-40.04431-52.34486-75.82917-83.15234-108.98437-28.57217 14.38182-56.32515 30.67444-82.53711 48.01172-13.11639-13.0373-27.88953-23.70214-42.40039-34.84961-14.25695-11.45134-30.32318-19.84677-45.5625-29.62891 4.53724-33.78791 6.7803-67.0514 7.68359-101.76758-39.32002-19.78904-81.24927-32.909829-123.66211-42.33398-16.9335 28.45977-32.41939 59.27922-45.90625 89.4082-15.99275-2.67239-32.05995-3.66203-48.14844-3.85351v-.02539c-.11239 0-.21676.02539-.3125.02539-.0999 0-.20478-.02539-.30468-.02539v.02539c-16.11763.19148-32.17106 1.18112-48.16797 3.85351-13.47854-30.12898-28.95559-60.94843-45.91407-89.4082zm-119.19921 359.52344c50.15113 0 90.79882 40.61746 90.79882 90.75195 0 50.16779-40.64769 90.80859-90.79882 90.80859-50.12617 0-90.78711-40.6408-90.78711-90.80859 0-50.13449 40.66094-90.75195 90.78711-90.75195zm427.17773 0c50.122 0 90.7793 40.61746 90.7793 90.75195 0 50.16779-40.6573 90.80859-90.7793 90.80859-50.15946 0-90.80664-40.6408-90.80664-90.80859 0-50.13449 40.64718-90.75195 90.80664-90.75195zm-213.59961 53.10937c16.14261 0 29.25391 11.90816 29.25391 26.56055v83.58984c0 14.66488-13.1113 26.5625-29.25391 26.5625-16.1426 0-29.22656-11.89762-29.22656-26.5625v-83.58984c0-14.65239 13.08396-26.56055 29.22656-26.56055z" stroke-width="4.16261"></path><path d="m0 0-1.121-16.063c-.135-1.936-1.675-3.477-3.611-3.616l-38.555-2.751c-.094-.007-.188-.01-.281-.01-1.916 0-3.569 1.406-3.852 3.33l-2.211 14.994h-31.459l-2.211-14.994c-.297-2.018-2.101-3.469-4.133-3.32l-38.555 2.751c-1.936.139-3.476 1.68-3.611 3.616l-1.121 16.063-32.547 3.138c.015-3.498.06-7.33.06-8.093 0-34.374 43.605-50.896 97.781-51.086h.066.067c54.176.19 97.766 16.712 97.766 51.086 0 .777.047 4.593.063 8.093z" transform="matrix(4.162611 0 0 -4.162611 784.07144 718.723121)"></path><path d="m0 0c0-7.994-6.479-14.473-14.479-14.473-7.996 0-14.479 6.479-14.479 14.473s6.483 14.479 14.479 14.479c8 0 14.479-6.485 14.479-14.479" transform="matrix(4.162611 0 0 -4.162611 367.36686 532.537071)"></path><path d="m0 0c0-7.994 6.477-14.473 14.471-14.473 8.002 0 14.479 6.479 14.479 14.473s-6.477 14.479-14.479 14.479c-7.994 0-14.471-6.485-14.471-14.479" transform="matrix(4.162611 0 0 -4.162611 656.64056 532.537071)"></path>
+						</svg>
+					</div>
+					<div class="feature-title">GDScript</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
+						</svg>
+						<svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+							<path d="M 11.59375 13.40625 C 5.234375 13.40625 0 18.636719 0 25 C 0 31.363281 5.234375 36.59375 11.59375 36.59375 C 16.261719 36.59375 20.007813 33.804688 22.59375 31.21875 C 23.570313 30.242188 24.347656 29.308594 25 28.46875 C 25.652344 29.308594 26.429688 30.242188 27.40625 31.21875 C 29.992188 33.804688 33.738281 36.59375 38.40625 36.59375 C 44.765625 36.59375 50 31.363281 50 25 C 50 18.636719 44.769531 13.40625 38.40625 13.40625 C 33.738281 13.40625 29.992188 16.195313 27.40625 18.78125 C 26.429688 19.757813 25.652344 20.691406 25 21.53125 C 24.363281 20.699219 23.613281 19.777344 22.65625 18.8125 C 20.089844 16.21875 16.335938 13.40625 11.59375 13.40625 Z M 11.59375 17.40625 C 14.710938 17.40625 17.636719 19.425781 19.8125 21.625 C 21.171875 22.996094 22.027344 24.132813 22.59375 24.96875 C 22.015625 25.800781 21.152344 26.972656 19.75 28.375 C 17.542969 30.582031 14.59375 32.59375 11.59375 32.59375 C 7.414063 32.59375 4 29.179688 4 25 C 4 20.820313 7.414063 17.40625 11.59375 17.40625 Z M 38.40625 17.40625 C 42.585938 17.40625 46 20.820313 46 25 C 46 29.179688 42.585938 32.59375 38.40625 32.59375 C 35.40625 32.59375 32.457031 30.582031 30.25 28.375 C 28.875 27 28.019531 25.839844 27.4375 25 C 28.019531 24.160156 28.875 23 30.25 21.625 C 32.457031 19.417969 35.40625 17.40625 38.40625 17.40625 Z M 36 20 L 36 23 L 33 23 L 33 27 L 36 27 L 36 30 L 40 30 L 40 27 L 43 27 L 43 23 L 40 23 L 40 20 Z M 7 23 L 7 27 L 17 27 L 17 23 Z"></path>
+						</svg>
+					</div>
+					<div class="feature-title">Arduino</div>
+				</span>
+				<span class="feature reveal fade-top">
+					<div class="icon-wrapper">
+						<svg class="icon-background" width="5em" height="5em" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+							<path stroke="none" stroke-width="0" fill="#ccc" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
+						</svg>
+						<i class="fa-brands fa-raspberry-pi icon"></i>
+					</div>
+					<div class="feature-title">Raspberry Pi</div>
+				</span>
+			</div>
+			<center>
+				<br/><br/><br/>
+				<span class="primary-button" onclick="toggleShowAllTech();">Show all technologies</span>
+			</center>
+		</section>
+
+		<section id="projects" class="wrapper">
+			<center class="title">
+				<h2>Projects</h2>
+				<p>List of projects I have worked on in the past.</p>
+			</center>
+			<div class="grid-featured">
+				<a class="feature reveal fade-top" href="./project/web-store-and-admin-panel.html">
+					<div class="img-wrapper">
+						<img src="./res/img/web-store_admin-panel.png" alt="Web Store and Admin Panel" loading="lazy"/>
+					</div>
+					<div class="feature-title">Web Store and Admin Panel</div>
+					<div class="feature-description">Web Application</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/sms-storage.html">
+					<div class="img-wrapper">
+						<img src="./res/img/sms-storage.png" alt="SMS Storage" loading="lazy"/>
+					</div>
+					<div class="feature-title">SMS Storage</div>
+					<div class="feature-description">Desktop Application</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/face-detection.html">
+					<div class="img-wrapper">
+						<img src="./res/img/face-counting.jpg" alt="Face Detection System for Advertising Placement" loading="lazy"/>
+					</div>
+					<div class="feature-title">Face Detection System for Advertising Placement</div>
+					<div class="feature-description">Embedded System</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/project-aim.html">
+					<div class="img-wrapper">
+						<img src="./res/img/project-aim.png" alt="Project Aim" loading="lazy"/>
+					</div>
+					<div class="feature-title">Project Aim</div>
+					<div class="feature-description">Computer Game</div>
+				</a>
+			</div>
+			<div class="grid">
+				<a class="feature reveal fade-top" href="./project/ahupdater.html">
+					<div class="img-wrapper">
+						<img src="./res/img/ahUpdater.png" alt="ahUpdater" loading="lazy"/>
+					</div>
+					<div class="feature-title">ahUpdater</div>
+					<div class="feature-description">Desktop Application</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/ahnotification.js.html">
+					<div class="img-wrapper">
+						<img src="./res/img/ahNotification.png" alt="ahNotification.js" loading="lazy"/>
+					</div>
+					<div class="feature-title">ahNotification.js</div>
+					<div class="feature-description">JavaScript Library</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/ahdeck.html">
+					<div class="img-wrapper">
+						<img src="./res/img/ahDeck.png" alt="ahDeck" loading="lazy"/>
+					</div>
+					<div class="feature-title">ahDeck</div>
+					<div class="feature-description">Desktop Application</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/service-report.html">
+					<div class="img-wrapper">
+						<img src="./res/img/service-report.png" alt="Service Report" loading="lazy"/>
+					</div>
+					<div class="feature-title">Service Report</div>
+					<div class="feature-description">Desktop Application</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/fogponic-plant-grower-box.html">
+					<div class="img-wrapper">
+						<img src="./res/img/fogponic-plant-grower-box.jpg" alt="Fogponic Plant Grower Box" loading="lazy"/>
+					</div>
+					<div class="feature-title">Fogponic Plant Grower Box</div>
+					<div class="feature-description">Embedded System</div>
+				</a>
+				<a class="feature reveal fade-top" href="./project/timer-socket.html">
+					<div class="img-wrapper">
+						<img src="./res/img/t-sock.png" alt="Timer Socket" loading="lazy"/>
+					</div>
+					<div class="feature-title">Timer Socket</div>
+					<div class="feature-description">Embedded System</div>
+				</a>
+			</div>
+		</section>
+
+		<section id="contact">
+			<center>
+				<h3>Want to have a chat? <a href="mailto:hii.hayyan@gmail.com" class="hover-underline">hii.hayyan@gmail.com</a></h3>
+			</center>
+		</section>
+
+		<div id="last-message">
+			<h1>GET IN TOUCH</h1>
+			<a href="https://id.linkedin.com/in/ahmadhayyan" rel="noopener noreferrer" target="_blank">
+				<i id="contact-linkedin" class="fa fa-linkedin icon"></i>
+			</a>
+			<a href="https://github.com/ahmadhayyan" rel="noopener noreferrer" target="_blank">
+				<i id="contact-github" class="fa fa-github icon"></i>
+			</a>
+			<a href="https://www.instagram.com/ahmadhayyan_/" rel="noopener noreferrer" target="_blank">
+				<i id="contact-instagram" class="fa fa-instagram icon"></i>
+			</a>
 		</div>
-		<footer id="copyright">Copyright &COPY; <a href="https://ahmadhayyan.github.io">ahmadhayyan</a>. All Rights Reserved.</footer>
+
+		<footer>
+			<div class="copyright">
+				<span>&copy;</span>
+				<span id="copyright-current-year">2024</span>
+				<a href="https://ahmadhayyan.github.io">ahmadhayyan</a><span>.</span>
+				<span>All rights reserved.</span>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="res/mainJS.js?v=20240408"></script>
 	</body>
 </html>
-
-<script type="text/javascript" src="res/mainJS.js?n=1"></script>

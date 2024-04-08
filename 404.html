@@ -1,73 +1,91 @@
 <html>
 	<head>
-		<meta charset="character_set"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta name="robots" content="noindex"/>
+		<meta charset="character_set"/>
+
+		<meta name="theme-color" content="#f9f5f2"/>
+		<meta name="msapplication-navbutton-color" content="#f9f5f2"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="#f9f5f2"/>
+		
 		<meta name="title" content="Ahmad Hayyan Personal Website"/>
-		<meta name="description" content="Hello, My name is Ahmad Hayyan. I am an engineering graduate. Here you can see the projects I have worked on."/>
+		<meta name="description" content="Hello, My name is Ahmad Hayyan. I am a software engineer. Here you can see the projects I have worked on."/>
 		<meta name="keywords" content="ahmadhayyan,ahmad hayyan,website,portfolio,developer,engineer,bachelor,c++,python,qt,php,html,css"/>
 		<meta name="author" content="Ahmad Hayyan"/>
-		<title>404 Page Not Found - Ahmad Hayyan</title>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Page Not Found - Ahmad Hayyan</title>
 		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://kit.fontawesome.com/2ac6720705.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./res/mainStyle.css">
 		<style>
-			body{
-				font: bold 35px monospace;
-				background-color: #282a36;
-				color: white;
-				margin: 0;
+			header {
+				margin-bottom: 0;
 			}
-			a{
-				color: #f09502;
-				transition: all 0.5s ease-in-out;
-				text-decoration: none;
+			section.wrapper {
+				padding: 0;
+				margin: 5em auto 9em auto;
 			}
-			a:hover{
-				color: #985f03;
+			section h1 {
+				margin-top: 0;
 			}
-			#error{
-				position: fixed;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				font-size: 400px;
-			}
-			#error::before{
-				content: 'Error';
-				display: block;
-				margin: 100px auto -100px auto;
-				font-size: 50px;
-			}
-			#back{
-				position: fixed;
-				bottom: 20px;
-				left: 20px;
-				background-color: rgba(56, 58, 89, 0.5);
-				padding: 10 30px;
-				border: 0 solid transparent;
-				border-radius: 40px;
-				word-spacing: -10px;
-			}
-			@media screen and (max-width: 499px){
-				body{
-					font-size: 20px;
-				}
-				#error{
-					font-size: 150px;
-				}
-				#error::before{
-					margin: 25px auto -25px auto;
-					font-size: 25px;
-				}
-				#back{
-					padding: 10px 25px 10px 20px;
-					word-spacing: 0;
-				}
+			img {
+				width: 60%;
 			}
 		</style>
-	<head>
+	</head>
 	<body>
-		<div id="error">404</div>
-		<a href="./" id="back"><i class="fa fa-home"></i> Home</a>
+		<header>
+			<nav>
+				<span class="wrapper flex">
+					<h3>
+						<a href="/">Ahmad <span>Hayyan</span></a>
+					</h3>
+					<span class="flex-spacer"></span>
+					<svg onclick="toggleMenu();" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+					<span class="flex menu">
+						<a href="/#details" class="hover-underline">About</a>
+						<a href="/#technologies" class="hover-underline">Skills</a>
+						<a href="/#contact" class="hover-underline">Contact</a>
+						<a href="/#projects" class="primary-button">My work</a>
+					</span>
+				</span>
+			</nav>
+		</header>
+
+		<section class="wrapper">
+			<center>
+				<img src="./res/img/404.jpg"/>
+				<h1>Page Not Found</h1>
+				<p>The page you are looking for does not exist.</p>
+			</center>
+		</section>
+
+		<div id="last-message">
+			<h1>GET IN TOUCH</h1>
+			<a href="https://id.linkedin.com/in/ahmadhayyan" rel="noopener noreferrer" target="_blank">
+				<i id="contact-linkedin" class="fa fa-linkedin icon"></i>
+			</a>
+			<a href="https://github.com/ahmadhayyan" rel="noopener noreferrer" target="_blank">
+				<i id="contact-github" class="fa fa-github icon"></i>
+			</a>
+			<a href="https://www.instagram.com/ahmadhayyan_/" rel="noopener noreferrer" target="_blank">
+				<i id="contact-instagram" class="fa fa-instagram icon"></i>
+			</a>
+		</div>
+
+		<footer>
+			<div class="copyright">
+				<span>Illustration designed by</span>
+				<a href="https://www.freepik.com/free-vector/404-error-with-landscape-concept-illustration_20602801.htm" rel="noopener noreferrer" target="_blank">storyset</a><span>.</span>
+				<br /><br />
+				<span>&copy;</span>
+				<span id="copyright-current-year">2024</span>
+				<a href="https://ahmadhayyan.github.io">ahmadhayyan</a><span>.</span>
+				<span>All rights reserved.</span>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="./res/mainJS.js?v=20240408"></script>
 	</body>
 </html>
