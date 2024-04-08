@@ -295,7 +295,9 @@ var koala = {
         }
         prevTouchPositions[touchPosition.identifier] = touchPosition;
       }
-      d3.event.preventDefault();
+      if (d3.event.cancelable) {
+        d3.event.preventDefault();
+      }
     }
 
     function onTouchEnd() {
@@ -304,7 +306,9 @@ var koala = {
         var touch = touches.item(touchIndex);
         prevTouchPositions[touch.identifier] = null;
       }
-      d3.event.preventDefault();
+      if (d3.event.cancelable) {
+        d3.event.preventDefault();
+      }
     }
 
     // Initialize interaction
